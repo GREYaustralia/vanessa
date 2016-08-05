@@ -1,0 +1,34 @@
+@import "modules";
+
+@font-face {
+  font-family: "Bushcraft Textured";
+  $font: $font-base-path + 'Bushcraft-textured';
+  src: url($font + '.otf') format('truetype'),
+  url($font + '.woff2') format('woff2'),
+  url($font + '.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Bushcraft One";
+  $font: $font-base-path + 'Bushcraft-one';
+  src: url($font + '.otf') format('truetype'),
+  url($font + '.woff2') format('woff2'),
+  url($font + '.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Gotham Book";
+  src: url($font-base-path + 'GothamHTF-Book.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Nanami-Bold';
+  src: url($font-base-path + 'Nanami-Bold.eot');
+  src: url($font-base-path + 'Nanami-Bold.eot?#iefix') format('embedded-opentype'), url($font-base-path + 'Nanami-Bold.woff2') format('woff2'), url($font-base-path + 'Nanami-Bold.woff') format('woff'), url($font-base-path + 'Nanami-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Nanami-ExtraLight';
+  src: url($font-base-path + 'Nanami-ExtraLight.eot');
+  src: url($font-base-path + 'Nanami-ExtraLight.eot?#iefix') format('embedded-opentype'), url($font-base-path + 'Nanami-ExtraLight.woff2') format('woff2'), url($font-base-path + 'Nanami-ExtraLight.woff') format('woff'), url($font-base-path + 'Nanami-ExtraLight.ttf') format('truetype');
+}

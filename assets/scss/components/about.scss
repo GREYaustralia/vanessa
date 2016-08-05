@@ -1,0 +1,28 @@
+@import 'modules';
+
+#about {
+  @include background('mantra.jpg');
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  padding: 0 2em 2em 2em;
+
+  @include if-tablet-and-smaller {
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .text-box {
+    width: 40vw;
+
+    .btn {
+      position: relative;
+      top: 0.5em;
+    }
+
+    @include if-tablet-and-smaller {
+      width: 100%;
+    }
+  }
+}
