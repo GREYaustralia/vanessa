@@ -41,6 +41,7 @@
       display: none;
     }
 
+
     .van, .bus, .car {
       cursor: pointer;
     }
@@ -58,6 +59,12 @@
 
       &:hover, &.hover {
         animation: van-in 0.2s forwards;
+      }
+
+      @include if-large-desktop {
+       outline-width: 2px;
+       outline-color: red;
+       outline-style: solid;
       }
     }
 

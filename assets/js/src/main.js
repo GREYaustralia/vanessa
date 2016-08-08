@@ -15,7 +15,13 @@ $(document).ready(function () {
         if (mantraElement) {
             if (mantraElement.visible >= 0.9) {
                 setTimeout(function () {
-                    $('.newsletter-modal').addClass('visible');
+                    if (sessionStorage.getItem('newsletter-modal') == true){
+                        $('.newsletter-modal').removeClass('visible');
+                    }
+                    else if (sessionStorage.getItem('newsletter-modal') == null){
+                        console.log('does this work?')
+                        $('.newsletter-modal').addClass('visible');
+                    };
                 }, 500);
             }
         }

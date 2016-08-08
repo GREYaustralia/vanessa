@@ -2,6 +2,7 @@ $(document).ready(function () {
     // Close newsletter modal
     $('.newsletter-modal .close, .btn--close-modal').on('click', function () {
         $('.newsletter-modal').removeClass('visible');
+        sessionStorage.setItem('newsletter-modal', 'true')
         setTimeout(function () {
             $('.newsletter-modal').remove();
         }, 200);
