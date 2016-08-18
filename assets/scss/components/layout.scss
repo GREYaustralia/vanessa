@@ -145,64 +145,12 @@ p {
   }
 }
 
-.btn-try {
-  font-family: "Bushcraft Textured";
-  // padding: .4em .6em .2em;
-  font-size: 1.5em;
-  border: 0.05em solid #fff;
-  background: $text-dark;
-  color: white;
-  line-height: 2em;
-  height:2em;
-  width: 10em;
-  margin: 0 auto;
-  text-align: center;
-
-  &.btn--transparent {
-    background: transparent;
-  }
-
-  &.btn--back-to-top {
-    position: fixed;
-    right: 1em;
-    bottom: 3em;
-    z-index: 1;
-    opacity: 0;
-    transform: scale(0);
-    transition: all 0.2s linear;
-    border: none;
-
-    &.visible {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-
-  &.btn--orange {
-    background: $text-orange;
-    border-color: $text-orange;
-  }
-
-  &.btn--red {
-    background: $text-red;
-    border-color: $text-red;
-  }
-
-  &.btn--white {
-    background: white;
-    color: $text-dark;
-  }
-
-  &.btn--rounded {
-    border-radius: 0.1em;
-  }
-}
-
-
-
 .btn {
   font-family: "Bushcraft Textured";
-  padding: .4em .6em .2em;
+  padding: 0 .6em;
+  height:2em;
+  line-height: 2em;
+  display:inline-block;
   font-size: 1.5em;
   border: 0.05em solid #fff;
   background: $text-dark;
