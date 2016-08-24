@@ -6,8 +6,18 @@
   padding: $navbar-height $navbar-height * 2;
   display: flex;
 
+  @include if-tablet-and-smaller {
+    @include background-opacity('internship.jpg', 0.5);
+
+    .text-red{
+      color:white;
+    }
+
+  }
+
   @include if-tablet {
     padding: 2em;
+
   }
 
   h3 {
@@ -17,7 +27,7 @@
   }
 
   @include if-mobile {
-    background: url("../img/internship.jpg") top;
+    background-position: top;
     background-size: cover;
   }
 

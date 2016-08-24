@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var $body = $('main');
+    var $body = $('.main');
 
     // Faking a file input (see: contact-us-html)
     $('[data-for]').on('click', function () {
@@ -42,6 +42,7 @@ $(document).ready(function () {
 
         // Save scroll position in session storage
         sessionStorage.scrollPos = $body.scrollTop();
+        console.log($body.scrollTop())
     });
 
     // Dynamically change text content depending on select value

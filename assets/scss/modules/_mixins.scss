@@ -45,6 +45,10 @@
   height: calc(100vh - #{$navbar-height} - #{$footer-height});
 }
 
+@mixin height-with-header-footer($height){
+  height: calc(#{$height} - #{$navbar-height} - #{$footer-height});
+}
+
 @mixin button($size, $color: white) {
   @include font('Bushcraft Textured', $size);
   border: ($size / 10) solid $color;

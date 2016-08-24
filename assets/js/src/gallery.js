@@ -8,6 +8,14 @@ $(document).ready(function () {
         prevArrow: '<button class="gallery__navigation gallery__navigation--prev"><i class="fa fa-angle-left"></i></button>',
         nextArrow: '<button class="gallery__navigation gallery__navigation--next"><i class="fa fa-angle-right"></i></button>',
         responsive: [
+
+            {
+                breakpoint:1210,
+                settings:{
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
             {
                 breakpoint: 768,
                 settings: {

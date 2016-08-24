@@ -7,16 +7,23 @@
   position: relative;
   overflow: hidden;
 
-  @include if-mobile {
-     background: url($img-base-path + "fleet-portrait.jpg") center bottom;
+
+  @include if-tablet-and-smaller{
+    @include background-opacity('fleet.jpg', 0.5);
+    background-position: center bottom;
   }
 
   .text-box {
     position: absolute;
     left: 0;
-    margin: 3em 10em;
+    // margin: 3em 10em;
+    margin: 1em 5em;
     text-align: left;
+    width:40vw;
 
+    @include if-laptop-and-smaller{
+      width:50vw;
+    }
     @include if-tablet-and-smaller {
       display: none;
     }
@@ -66,6 +73,7 @@
       //  outline-color: red;
       //  outline-style: solid;
       //  transform:scale(2);
+
       // }
     }
 

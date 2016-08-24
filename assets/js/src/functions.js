@@ -1,4 +1,4 @@
-var $body = $('main');
+var $body = $('.main');
 var $navbar = document.querySelector('nav');
 
 // Get scroll position from session storage

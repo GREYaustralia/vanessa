@@ -8,6 +8,7 @@
 
   @include if-tablet-and-smaller {
     align-items: center;
+     @include background-opacity('hsiyfc.jpg', 0.5);
   }
 
   .text-box {

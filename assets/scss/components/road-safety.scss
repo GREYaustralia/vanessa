@@ -44,6 +44,10 @@
         width: 100%;
       }
     }
+
+    a{
+      color:$text-orange;
+    }
   }
 }
 
@@ -133,6 +137,9 @@
       font-size: 1em;
       margin-bottom: 1.5em;
       line-height: 1.5em;
+    }
+    a{
+      color:$text-orange;
     }
 
     @include if-tablet-and-smaller {

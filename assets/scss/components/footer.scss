@@ -1,4 +1,4 @@
-@import 'modules';
+  @import 'modules';
 
 footer {
   background: $text-dark;
@@ -44,14 +44,24 @@ footer {
     text-transform: uppercase;
     font-size: 0.9em;
 
+    li {
+      display: inline-block;
+    }
+    li+li::before{
+      content:' | ';
+      color: lighten($text-dark, 30);
+    }
+
     a {
       white-space: nowrap;
     }
 
-    span {
+
+
+    // span {
       color: lighten($text-dark, 30);
-      margin-left: 0.5em;
-    }
+    //   margin-left: 0.5em;
+    // }
 
     @include if-tablet-and-smaller {
       font-size: .75em;

@@ -55,6 +55,20 @@ nav {
   }
 }
 
+
+.search{
+  font-family: "Helvetica", "FontAwesome";
+
+  input:focus{
+    background-color: $text-light;
+    margin: 0 1em 0 0;
+    // height:1em;
+    padding:0.3em;
+    padding-left: .5em;
+    border-radius: 1em;
+  }
+}
+
 /*
  * Hamburger Menu
  */

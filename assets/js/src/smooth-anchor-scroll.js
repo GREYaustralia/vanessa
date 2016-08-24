@@ -1,7 +1,7 @@
 $(document).ready(function () {
     var $navbar = document.querySelector('nav');
     var $root = $('html, body');
-    var $body = $('main');
+    var $body = $('.main');
 
     // Smooth scroll to section on non-mobiles
     var isMobile = window.matchMedia('only screen and (max-width: 26.6em)');
