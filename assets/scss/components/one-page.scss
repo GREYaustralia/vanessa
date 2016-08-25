@@ -18,6 +18,13 @@
     width: 60%;
     text-align: left;
 
+    input{
+      .error{
+        // border-color: $errorMsgColor;
+        margin-bottom: none;
+      }
+    }
+
     @include if-tablet-and-smaller {
       width: 100%;
       padding: 0;
@@ -27,12 +34,16 @@
     input, textarea, select {
       display: block;
       width: 100%;
-      border: 0.125em solid white;
+      border: 0.125em solid;
+      border-color:white;
       border-radius: 0;
       margin-bottom: 1em;
       padding: 0.5em 1em;
       color: white;
       outline: none;
+      .error{
+        border-color: $errorMsgColor;
+      }
 
       &:hover {
         cursor: text;

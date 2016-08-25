@@ -1,4 +1,7 @@
 $(document).ready(function () {
+
+    size = 350
+
     height = $(window).height();
     width = $(window).width();
     // Blog post gallery
@@ -52,11 +55,11 @@ $(document).ready(function () {
         ]
     });
 
-    $(window).on('resize', function(){
-        var resizeHeight = $(window).height();
-        var heightChange = resizeHeight - height
-        console.log(heightChange)
-        // $('.blog__hero img').css('height', '' heightChange)
-
-    });
+    // $(window).on('resize', function(){
+    //     var resizeHeight = $(window).height();
+    //     var heightDivide = resizeHeight - height
+    //     var heightChange = heightDivide
+    //     // console.log(heightChange / 20)
+    //     $('.blog__hero ').find('img').css('height', 'calc(350px + '+heightChange+'px)' )
+    // });
 });

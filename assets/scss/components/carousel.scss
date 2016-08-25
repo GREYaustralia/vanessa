@@ -44,19 +44,32 @@
         transform: translate(-50%, -50%);
       }
 
-      button {
-        position: absolute;
-        bottom: 4em;
-        left: 50%;
-        transform: translate(-50%, 0);
-        z-index: 1;
-        @include button(1.4em);
+      // button {
+      //   position: absolute;
+      //   bottom: 4em;
+      //   left: 50%;
+      //   transform: translate(-50%, 0);
+      //   z-index: 1;
+      //   @include button(1.4em);
 
-        @include if-mobile {
-          bottom: 50%;
-          transform: translate(-50%, 50%);
-          @include button(1.8em);
-        }
+      //   @include if-mobile {
+      //     bottom: 50%;
+      //     transform: translate(-50%, 50%);
+      //     @include button(1.8em);
+      //   }
+      // }
+
+      .element__toggle{
+        font-family: 'FontAwesome' ;
+        font-size: 8em;
+        color:$text-light;
+        right:12px;
+        position: absolute;
+        opacity:0.6;
+        bottom:0;
+        border:none;
+        cursor: pointer;
+        content: "New text";
       }
     }
 
@@ -161,3 +174,6 @@
     }
   }
 }
+
+// &#xf04b; play
+// &#xf04c; pause

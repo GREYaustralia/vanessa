@@ -228,6 +228,21 @@ p {
   }
 }
 
+form{
+  .error {
+    color: $errorMsgColor;
+    input{
+      margin-bottom:none;
+    }
+  }
+
+  label, input, button {
+    .error {
+      color: $errorMsgColor;
+    }
+  }
+}
+
 .newsletter-modal {
   position: fixed;
   left: 2em;
