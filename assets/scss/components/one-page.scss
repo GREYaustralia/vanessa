@@ -1,0 +1,135 @@
+@import "modules";
+
+#one-page-section {
+  @include full-height-with-footer();
+  background: black;
+  display: flex;
+  flex-direction: row;
+  padding: 3em;
+  overflow-y: auto;
+
+  @include if-tablet-and-smaller {
+    flex-direction: column;
+  }
+
+  form {
+    font-family: "Bushcraft Textured";
+    padding-right: 2em;
+    width: 60%;
+    text-align: left;
+
+    label{
+      display: block;
+    }
+
+    .privacypolicy{
+      margin-top: 1em;
+      color: white;
+      text-align: center;
+    }
+
+
+
+    @include if-tablet-and-smaller {
+      width: 100%;
+      padding: 0;
+      order: 2;
+    }
+
+    input, textarea, select {
+      display: block;
+      width: 100%;
+      border: 0.125em solid white;
+      border-radius: 0;
+      margin-bottom: 1em;
+      padding: 0.5em 1em;
+      color: white;
+      outline: none;
+
+      &:hover {
+        cursor: text;
+      }
+
+      &::placeholder {
+        color: white;
+      }
+    }
+
+    select {
+      background: $text-orange url("../img/fa-caret-down.png") no-repeat 98%;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    input[type="file"] {
+      display: none;
+    }
+
+    textarea {
+      height: 10em;
+      resize: none;
+    }
+
+    button {
+      padding: 0.5em 1em;
+      background: $text-red;
+      color: black;
+      margin-right: 0.5em;
+
+      &.btn--upload {
+        background: white;
+      }
+
+      @include if-tablet-and-smaller {
+        width: 100%;
+        margin-bottom: 1em;
+      }
+    }
+  }
+
+  .text-box {
+    width: 40%;
+
+    @include if-tablet-and-smaller {
+      width: 100%;
+    }
+  }
+
+  .text-box-tac {
+    color: white;
+    text-align: left;
+  }
+
+  a {
+    color: white;
+    text-decoration: underline;
+  }
+
+  .subject {
+    display: none;
+
+    &.subject--enquiry {
+      display: block;
+    }
+  }
+
+  h3 {
+    font-size: 2.5em;
+    margin-bottom: 0.3em;
+    color: white;
+    font-family: "Bushcraft Textured";
+  }
+
+  p {
+    margin: 0;
+
+    @include if-tablet-and-smaller {
+      order: 1;
+      font-size: 1.5em;
+      width: 100%;
+      margin-bottom: 1em;
+    }
+  }
+}

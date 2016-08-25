@@ -1,0 +1,144 @@
+@import 'modules';
+
+#blog {
+  @include full-height-with-footer;
+  padding: 5em;
+  overflow: auto;
+  background: #1d1d1d;
+
+  @include if-landscape {
+    padding: 4em 2em;
+  }
+
+  .btn-see-more {
+    display: inline-block;
+    border: 1px solid #000;
+    font-family: "Bushcraft One";
+    font-size: 1.3em;
+    padding: 0.2em 2em 0;
+    color: $text-dark;
+    position: relative;
+    top: 1em;
+    background: white;
+  }
+  .btn{
+    position: relative;
+    top: 5em;
+    @include if-tablet-and-smaller{
+      top:8em;
+    }
+  }
+}
+
+.gallery {
+  position: relative;
+  padding: 0 3em;
+  top:15%;
+
+  @include if-mobile {
+    padding: 0;
+  }
+
+  .gallery__slide {
+    @include if-landscape {
+      // width: 50vh;
+      width:25%;
+    }
+  }
+
+  .gallery__body {
+    background: white;
+    text-align: left;
+    border: 0.15em solid $text-dark;
+    margin: 0 2em;
+    // top:25%;
+    overflow: hidden;
+
+  .text{
+    height: 17vh;
+    text-align:center;
+
+    a{
+      font-size: .8em;
+      font-family: 'Helvetica';
+      font-weight: lighter;
+      padding: 0 1.2em;
+      text-shadow:none;
+      color: #a7a7a7;
+      text-decoration: underline;
+      // text-align: center;
+      text-transform: uppercase;
+
+
+    }
+  }
+
+    @include if-mobile {
+      margin: 0;
+    }
+
+    @include if-landscape {
+      @include square(1);
+      display: flex;
+      margin: 0;
+    }
+
+
+    h3 {
+      font-size: 1.1em;
+      padding: 0.5em 1em 0 1em;
+      font-family: 'Helvetica';
+      text-transform: uppercase;
+      // text-align: center;
+      font-weight: normal;
+      text-shadow:none;
+      // color:$text-light;
+    }
+
+    p {
+      font-size: 1em;
+      font-family: 'Helvetica';
+      font-weight: lighter;
+      color: black;
+      padding: 0 1.2em;
+      text-shadow:none;
+      // color:$text-light;
+      text-align: center;
+    }
+    img {
+      height: 33vh;
+      width: 100%;
+      object-fit: cover;
+
+      @include if-landscape {
+        width: auto;
+        height: 100%;
+      }
+    }
+  }
+
+    .gallery__navigation {
+      position: absolute;
+      color: $text-light;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 3em;
+      z-index: 1;
+
+      &.gallery__navigation--prev {
+        left: -1em;
+
+        @include if-landscape {
+          left: 0;
+        }
+      }
+
+      &.gallery__navigation--next {
+        right: -1em;
+
+        @include if-landscape {
+          right: 0;
+        }
+      }
+    }
+}
