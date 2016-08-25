@@ -10,15 +10,17 @@ $(document).ready(function () {
 
     // Submit newsletter form
     $('.newsletter-modal form').on('submit', function (e) {
-        e.preventDefault();
+        // if ($(this).valid()){
+            e.preventDefault();
 
         // Send ajax post request
-        $.post('ajax.php', $(this).serialize());
+            $.post('ajax.php', $(this).serialize());
 
-        // Hide form
-        $('.newsletter-modal--form').hide();
+            // Hide form
+            $('.newsletter-modal--form').hide();
 
-        // Show confirmation text
-        $('.newsletter-modal--confirmation').show();
+            // Show confirmation text
+            $('.newsletter-modal--confirmation').show();
+        // }
     });
 });

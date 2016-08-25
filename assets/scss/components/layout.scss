@@ -9,6 +9,19 @@ main {
   overflow-x: hidden;
 }
 
+form{
+  input.error{
+    border:0.125em solid $errorMsgColor !important;
+  }
+  textarea.error{
+    border:0.125em solid $errorMsgColor !important;
+  }
+  .error{
+    color:$errorMsgColor !important;
+    margin-bottom: 0 !important;
+  }
+}
+
 html, body {
   font-family: $font-family;
   font-size: 10px;
@@ -228,20 +241,6 @@ p {
   }
 }
 
-form{
-  .error {
-    color: $errorMsgColor;
-    input{
-      margin-bottom:none;
-    }
-  }
-
-  label, input, button {
-    .error {
-      color: $errorMsgColor;
-    }
-  }
-}
 
 .newsletter-modal {
   position: fixed;
