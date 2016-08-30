@@ -38,7 +38,9 @@
     align-items: flex-end;
     width: 100%;
     justify-content: center;
-    margin-bottom: 6.5em;
+    // margin-bottom: 10vh;
+    position: absolute;
+    bottom:0;
 
     @include if-ie {
       transform: translateX(-20%);
@@ -46,6 +48,10 @@
 
     @include if-tablet-and-smaller {
       display: none;
+    }
+    @include if-large-desktop{
+      transform: scale(2);
+      bottom:22vh
     }
 
 

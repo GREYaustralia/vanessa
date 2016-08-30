@@ -3,10 +3,14 @@
 @font-face {
   font-family: "Bushcraft Textured";
   $font: $font-base-path + 'Bushcraft-textured';
-  src: url($font + '.otf') format('truetype'),
-  url($font + '.woff2') format('woff2'),
+  src:
+  // url($font + '.woff2') format('woff2'),
   url($font + '.woff') format('woff');
+  // url($font + '.otf') format('truetype'),
+  // url($font + '.woff2') format('woff2'),
+  // url($font + '.woff') format('woff')
 }
+
 
 @font-face {
   font-family: "Bushcraft One";
