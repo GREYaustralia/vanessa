@@ -44,6 +44,10 @@
         width: 100%;
       }
     }
+
+    a{
+      color:$text-orange;
+    }
   }
 }
 
@@ -134,6 +138,9 @@
       margin-bottom: 1.5em;
       line-height: 1.5em;
     }
+    // a{
+    //   color:$text-orange;
+    // }
 
     @include if-tablet-and-smaller {
       width: 80vw;

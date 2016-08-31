@@ -1,0 +1,110 @@
+@import 'modules';
+
+#blog-entry{
+  width:60vw;
+  margin:0 auto;
+  height:auto;
+  position: relative;
+
+  .blog__content{
+    h1 {
+      font-family: "Bushcraft Textured";
+      line-height: 1.2em;
+      color: $text-dark;
+      padding: 1em 1em 0 1em;
+      font-size: 3em;
+      cursor: pointer;
+      text-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+    }
+
+    p{
+        font-size: 1em;
+        font-family: 'Helvetica';
+        font-weight: lighter;
+        color: $text-dark;
+        padding: 0 1.2em;
+        text-shadow:none;
+        padding: 0 1.2em;
+        text-align: center;
+    }
+    img{
+      width:100%;
+      object-fit: cover;
+    }
+  }
+}
+
+
+.blog__section{
+  width:60vw;
+  overflow: hidden;
+  .blog__entries{
+    // margin: 30px auto 50px;
+    // width:50%;
+  // position: relative;
+    @include if-mobile {
+      // padding: 0;
+    }
+
+    .blog__slide {
+      // display: block;
+      float:left;
+      @include if-landscape {
+      }
+    }
+    // .blog__slide:nth-child(odd) {
+    //     float: left;
+    //   }
+    // .blog__slide:nth-child(even) {
+    //     float: right;
+    //   }
+    .blog__body{
+      margin: 2.5%;
+      position: relative;
+      h3 {
+        font-size: 0.9em;
+        padding: 0.5em 1em 0 1em;
+        font-family: 'Helvetica';
+        text-transform: uppercase;
+        font-weight: normal;
+        text-shadow:none;
+      }
+
+      p {
+        font-size: 0.8em;
+        font-family: 'Helvetica';
+        font-weight: lighter;
+        color: black;
+        padding: 0 1.2em;
+        text-shadow:none;
+        text-align: center;
+      }
+      img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        height: 40vh;
+      }
+      a {
+        font-size: 0.8em;
+        text-transform: uppercase;
+        color: #767676;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+  .blog__navigation {
+    position: absolute;
+    color: $text-dark;
+    top: 80%;
+    transform: translateY(-50%);
+    font-size: 5em;
+    z-index: 1;
+    &.blog__navigation--prev {
+      left: -1em;
+    }
+    &.blog__navigation--next {
+      right: -1em;
+  }
+}

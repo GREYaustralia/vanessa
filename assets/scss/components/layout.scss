@@ -9,6 +9,22 @@ main {
   overflow-x: hidden;
 }
 
+form{
+  label.error{
+    text-align:left;
+  }
+  input.error{
+    border:0.125em solid $errorMsgColor !important;
+  }
+  textarea.error{
+    border:0.125em solid $errorMsgColor !important;
+  }
+  .error{
+    color:$errorMsgColor !important;
+    margin-bottom: 0 !important;
+  }
+}
+
 html, body {
   font-family: $font-family;
   font-size: 10px;
@@ -63,6 +79,7 @@ button {
 
 a, button, input, textarea {
   outline: none;
+  color:$text-orange
 }
 
 h1, h2, h3, h4, p, li {
@@ -76,6 +93,7 @@ p {
   font-size: 1.9em;
   margin: 0.5em 0;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.35);
+  letter-spacing: .5px;
 
   .text-body {
     font-family: "Helvetica";
@@ -147,11 +165,14 @@ p {
 
 .btn {
   font-family: "Bushcraft Textured";
-  padding: .4em .6em .2em;
+  padding: 0 .6em;
+  height:2em;
+  line-height: 2em;
+  display:inline-block;
   font-size: 1.5em;
   border: 0.05em solid #fff;
   background: $text-dark;
-  color: white;
+  color: $text-dark;
 
   &.btn--transparent {
     background: transparent;
@@ -223,6 +244,7 @@ p {
   }
 }
 
+
 .newsletter-modal {
   position: fixed;
   left: 2em;
@@ -264,7 +286,7 @@ p {
   }
 
   h3 {
-    color: $text-orange;
+    color: $text-red;
     font-family: "Bushcraft Textured";
     font-size: 1.5em;
     margin-bottom: 0.5em;
@@ -298,6 +320,9 @@ p {
     label {
       display: block;
       cursor: pointer;
+      a{
+        color:$text-red;
+      }
     }
   }
 

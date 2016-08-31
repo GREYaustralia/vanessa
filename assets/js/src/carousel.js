@@ -21,4 +21,18 @@ $(document).ready(function () {
         },
         after: function (index) {},
     });
+
+
+    // var mediaPlayer = $('#crowd');
+    $('.element__toggle').on('click', function(){
+        if (video.paused === false) {
+            video.pause();
+            $('.element__toggle').empty()
+            $('.element__toggle').html('&#xf04b')
+        } else {
+            video.play();
+            $('.element__toggle').empty()
+            $('.element__toggle').html('&#xf04c')
+        }
+    })
 });

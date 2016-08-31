@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var $body = $('main');
+    var $body = $('.main');
 
     // Faking a file input (see: contact-us-html)
     $('[data-for]').on('click', function () {
@@ -15,7 +15,12 @@ $(document).ready(function () {
         if (mantraElement) {
             if (mantraElement.visible >= 0.9) {
                 setTimeout(function () {
-                    $('.newsletter-modal').addClass('visible');
+                    if (sessionStorage.getItem('newsletter-modal') == true){
+                        $('.newsletter-modal').removeClass('visible');
+                    }
+                    else if (sessionStorage.getItem('newsletter-modal') == null){
+                        $('.newsletter-modal').addClass('visible');
+                    };
                 }, 500);
             }
         }

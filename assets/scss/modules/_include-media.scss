@@ -338,6 +338,7 @@ $im-no-media-expressions: ('screen', 'portrait', 'landscape') !default;
     // functions cannot be called anywhere in Sass, we need to hack the call in
     // a dummy variable, such as `$_`. If anybody ever raise a scoping issue with
     // Sass 3.3, change this line in `@if log(..) {}` instead.
+
     $_: log('Unknown unit `#{unit($value)}`.');
   }
 

@@ -16,7 +16,7 @@
     width: 100vw;
 
     img {
-      width: 60%;
+      width: 40%;
 
       @include if-mobile {
         display: block;
@@ -39,25 +39,42 @@
 
       img {
         position: absolute;
-        top: 50%;
+        top: 45%;
         left: 50%;
         transform: translate(-50%, -50%);
       }
 
-      button {
-        position: absolute;
-        bottom: 4em;
-        left: 50%;
-        transform: translate(-50%, 0);
-        z-index: 1;
-        @include button(1.4em);
+      // button {
+      //   position: absolute;
+      //   bottom: 4em;
+      //   left: 50%;
+      //   transform: translate(-50%, 0);
+      //   z-index: 1;
+      //   @include button(1.4em);
 
-        @include if-mobile {
-          bottom: 50%;
-          transform: translate(-50%, 50%);
-          @include button(1.8em);
-        }
+      //   @include if-mobile {
+      //     bottom: 50%;
+      //     transform: translate(-50%, 50%);
+      //     @include button(1.8em);
+      //   }
+      // }
+
+      .element__toggle{
+        font-family: 'FontAwesome' ;
+        font-size: 6em;
+        color:#949494;
+        right:12px;
+        position: absolute;
+        opacity:0.6;
+        bottom:.5em;
+        border:none;
+        cursor: pointer;
+        // content: "New text";
       }
+      .playing{
+
+      }
+      .paused{}
     }
 
     &.carousel__body--green-man-grants {
@@ -161,3 +178,4 @@
     }
   }
 }
+

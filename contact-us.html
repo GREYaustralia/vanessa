@@ -22,6 +22,11 @@
             <li><a href="https://www.instagram.com/vanessabus/" target="_blank"><i class="fa fa-instagram"></i></a></li>
         </ul>
     </div>
+    <div class="search">
+        <form action="search.html" method="get">
+            <input type="search" name="search" placeholder=" &#xf002; Search">
+        </form>
+    </div>
     <button class="hamburger">
         <span></span>
         <span></span>
@@ -29,9 +34,6 @@
         <span></span>
     </button>
     <ul class="menu">
-        <form action="search.html" method="get">
-            <input type="search" name="search" placeholder="&#xf002; Search">
-        </form>
         <li><a href="index.html#about">About Vanessa</a></li>
         <li><a href="index.html#road-safety">Road Safety</a></li>
         <li><a href="index.html#fleet">Book Me</a></li>
@@ -45,26 +47,23 @@
 
 <main>
     <section id="one-page-section">
-        <form action="" id="contact-us" method="post" enctype="multipart/form-data">
-            <select name="subject">
+        <form action="" name="contact-us" id="contact-us" method="post" enctype="multipart/form-data">
+            <select name="subject" title="Select Subject" aria-label="Select Subject">
                 <option value="enquiry">General Enquiry</option>
-                <option value="internships">Vanessa Internships</option>
+                <!-- <option value="internships">Vanessa Internships</option> -->
                 <option value="fleet">Vanessa Fleet</option>
             </select>
-            <input type="text" name="name" placeholder="Name">
-            <input type="text" name="surname" placeholder="Surname">
-            <input type="text" name="phone_number" placeholder="Phone Number">
-            <input type="text" name="email" placeholder="Email">
-            <textarea name="message" placeholder="What can we help you with?" data-placeholder-enquiry="What can we help you with?" data-placeholder-internships="What can you bring to the Vanessa team?" data-placeholder-fleet="Tell us more about your event?"></textarea>
-            <input type="file" name="file" id="file">
-            <button type="button" class="btn--upload" data-for="#file">Upload Attachment</button>
+            <input type="text" title="First Name" name="name" placeholder="First Name" aria-label="First Name" required>
+            <input type="text" title="Last Name" name="surname" placeholder="Surname" aria-label="Last Name" required>
+            <input type="text" title="Phone Number" name="phone_number" placeholder="Phone Number" aria-label="Phone Number" required>
+            <input type="text" title="Email" name="email" placeholder="Email" aria-label="Email" required>
+            <textarea name="message" placeholder="What can we help you with?" data-placeholder-enquiry="What can we help you with?" data-placeholder-internships="What can you bring to the Vanessa team?" data-placeholder-fleet="Tell us more about your event?" title="Message" aria-label="Message" required></textarea>
             <button type="submit">Submit</button>
+            <label class='privacypolicy'>We are committed to protecting your privacy. Your e-mail address will not be disclosed, added to a mailing list, or used for any other purpose without your consent. View our <a href='piracy-policy.html'>Privacy Policy</a>.</label>
         </form>
         <div class="text-box subject subject--enquiry">
             <h3>General Enquiry</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at pellentesque tortor, non volutpat
-                risus. Integer ultricies convallis porta. Donec mollis augue ut leo malesuada luctus. Suspendisse non
-                lorem ex. Maecenas iaculis congue purus in rutrum.</p>
+            <p>Questions? Comments? Conundrums? We’re all ears (attached to actual people).</p>
         </div>
         <div class="text-box subject subject--internships">
             <h3>Vanessa Internships</h3>
@@ -81,25 +80,30 @@
 
     <footer>
         <a href="index.html" class="brand">
-            <img src="assets/img/logo.png" alt="Vanessa">
+            <img src="assets/img/logo.png" alt="Vanessa Logo">
         </a>
-        <div class="links">
-            <a href="https://www.tac.vic.gov.au" target="_blank">TAC</a><span>|</span>
-            <a href="http://www.howsafeisyourfirstcar.com.au" target="_blank">How Safe Is Your First Car</a><span>|</span>
-            <a href="https://www.towardszero.vic.gov.au" target="_blank">Towards Zero</a><span>|</span><br>
-            <a href="privacy-policy.html">Privacy Policy</a><span>|</span>
-            <a href="contact-us.html">Contact Us</a><span>|</span>
-            <a href="terms-and-conditions.html">Terms and Conditions</a>
-        </div>
+        <ul class="links">
+            <li><a href="https://www.tac.vic.gov.au" target="_blank">TAC</a></li>
+            <li><a href="http://www.howsafeisyourfirstcar.com.au" target="_blank">How Safe Is Your First
+                Car</a></li>
+            <li><a href="https://www.towardszero.vic.gov.au" target="_blank">Towards Zero</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
+        </ul>
     </footer>
 </main>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.1/jquery.flexslider.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
 <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery-fracs/0.15.1/jquery.fracs.min.js"></script>
-<script type="text/javascript" src="assets/js/app.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+<script type="text/javascript"
+        src="assets/js/app.js"></script>
 </body>
 </html>

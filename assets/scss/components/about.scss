@@ -11,6 +11,8 @@
   @include if-tablet-and-smaller {
     justify-content: space-around;
     flex-direction: column;
+    // background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(../img/mantra.jpg) center center;
+    @include background-opacity('mantra.jpg', 0.5);
   }
 
   .text-box {

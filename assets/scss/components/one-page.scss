@@ -18,6 +18,18 @@
     width: 60%;
     text-align: left;
 
+    label{
+      display: block;
+    }
+
+    .privacypolicy{
+      margin-top: 1em;
+      color: white;
+      text-align: center;
+    }
+
+
+
     @include if-tablet-and-smaller {
       width: 100%;
       padding: 0;

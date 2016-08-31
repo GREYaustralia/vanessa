@@ -14,23 +14,25 @@
 </head>
 <body>
 <nav>
-    <a href="#hero" class="brand"><img src="assets/img/logo.png" alt="Vanessa"></a>
+    <a href="#hero" class="brand"><img src="assets/img/logo.png" alt="Vanessa Logo"></a>
     <div class="social-media-icons">
         <ul>
-            <li><a href="https://www.facebook.com/ilikevanessa" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.facebook.com/ilikevanessa" name='facebook' target="_blank"><i class="fa fa-facebook"></i></a></li>
             <li><a href="https://www.instagram.com/vanessabus/" target="_blank"><i class="fa fa-instagram"></i></a></li>
         </ul>
     </div>
-    <button class="hamburger">
+    <div class="search">
+        <form action="search.html" method="get">
+            <input type="search" title='search bar' name="search" placeholder=" &#xf002; Search " aria-label="Search">
+        </form>
+    </div>
+    <button class="hamburger" title="navigation" tabindex="0">
         <span></span>
         <span></span>
         <span></span>
         <span></span>
     </button>
     <ul class="menu">
-        <form action="search.html" method="get">
-            <input type="search" name="search" placeholder="&#xf002; Search">
-        </form>
         <li><a href="#about">About Vanessa</a></li>
         <li><a href="#road-safety">Road Safety</a></li>
         <li><a href="#fleet">Book Me</a></li>
@@ -42,15 +44,15 @@
     </ul>
 </nav>
 
-<a href="#hero" class="nav-btn nav-btn--up"><i class="fa fa-angle-up"></i></a>
-<a href="#about" class="nav-btn nav-btn--down"><i class="fa fa-angle-down"></i></a>
-<a href="#hero" class="btn btn--back-to-top btn--white">Back to the top</a>
+<a href="#hero" class="nav-btn nav-btn--up" title="Previous Section"><i class="fa fa-angle-up"></i></a>
+<a href="#about" class="nav-btn nav-btn--down" title="Next Section"><i class="fa fa-angle-down"></i></a>
+<a href="#hero" class="btn btn--back-to-top btn--white" title="Back to top">Back to the top</a>
 
-<main>
+<main class='main'>
     <div class="social-media-icons-fixed">
         <ul>
-            <li><a href="https://www.facebook.com/ilikevanessa" target="_blank"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://www.instagram.com/vanessabus/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/ilikevanessa" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/vanessabus/" target="_blank" title="instagram"><i class="fa fa-instagram"></i></a></li>
         </ul>
     </div>
 
@@ -59,15 +61,16 @@
             <ul class="carousel__slides">
                 <li>
                     <div class="carousel__body carousel__body--video">
-                        <img src="assets/img/logo-full.png" alt="Vanessa">
+                        <img src="assets/img/logo-full.png" alt="Vanessa Header Background" description="Screen Grab of a crowd dancing at a festival">
                         <video autoplay loop muted id="crowd" poster="assets/img/crowd.jpg">
                             <source src="assets/video/crowd.webm" type="video/webm">
                         </video>
+                        <button class='element__toggle'>&#xf04c</button>
                     </div>
                 </li>
                 <li>
                     <div class="carousel__body carousel__body--green-man-grants">
-                        <img src="assets/img/gmg_logo.png">
+                        <img src="assets/img/gmg_logo.png" alt='Green Man Grants Logo'>
                         <p>Make the roads safer and you could get the green light for up to $50,000 funding plus a bonus
                             $5,000 cash prize</p>
                         <a href="#" class="btn btn--transparent">Learn More</a>
@@ -92,14 +95,14 @@
     </section>
 
     <section id="road-safety">
-        <a href="road-safety.html">
+        <a href="road-safety.html#road-safety-drink">
             <div id="drink-driving">
                 <h3>Drink Driving</h3>
                 <p>Drink driving can be dangerous, and not just because rosé is hard to get out of car upholstery.
                     Luckily there’s a really simple way to avoid drink driving.</p>
             </div>
         </a>
-        <a href="road-safety.html">
+        <a href="road-safety.html#road-safety-drug">
             <div id="drug-driving">
                 <h3>Drug Driving</h3>
                 <p>If you’re taking anything stronger than a Panadol there’s a good chance it’s going to affect your
@@ -107,28 +110,28 @@
                     the two.</p>
             </div>
         </a>
-        <a href="road-safety.html">
+        <a href="road-safety.html#road-safety-distractions">
             <div id="distractions">
                 <h3>Distractions</h3>
                 <p>It doesn’t matter how good the latest Snapchat filter is, it can wait until you’re out of the car.
                     Would you really want your last words to be the smiling poo emoji?</p>
             </div>
         </a>
-        <a href="road-safety.html">
+        <a href="road-safety.html#road-safety-drowsy">
             <div id="drowsy-driving">
                 <h3>Tired Driving</h3>
                 <p>One minute you’re driving, the next you’re sitting your high school exams in your underwear, and
                     that’s not even the worst part – fatigue can be fatal in the blink of an eye.</p>
             </div>
         </a>
-        <a href="road-safety.html">
+        <a href="road-safety.html#road-safety-party">
             <div id="prepare-to-party">
                 <h3>Prepare to Party</h3>
                 <p>The Beastie Boys fought tooth and nail for your right to party, so make it count, plan ahead. Nothing
                     spoils a good night like getting stranded without a lift.</p>
             </div>
         </a>
-        <a href="road-safety.html">
+        <a href="road-safety.html#road-safety-drug">
             <div id="vehicle-safety">
                 <h3>Vehicle Safety</h3>
                 <p>You don’t need a boxy 90’s Volvo to be safe these days. Safe cars come in a variety of colours, types
@@ -138,11 +141,12 @@
     </section>
 
     <section id="fleet">
+        <!-- <img src='assets/img/fleet.jpg'> -->
         <div class="text-box">
             <p>The Vanessa Fleet consists of our bus, minivan and Bute. It’s the vehicular equivalent of the Ice Age
                 films (don’t read too far into that analogy). You’ll see the fleet at open days and some of the best
-                music festivals, spreading good vibes and our about – all of us for none of us.</p>
-            <a href="fleet.html#bus" class="btn btn--orange">Find Out More</a>
+                music festivals, spreading good vibes and our mantra – all of us for none of us.</p>
+            <a href="fleet.html#bus"><div class="btn btn--orange">Find Out More</div></a>
         </div>
         <div class="vehicles">
             <div class="van" data-href="fleet.html#van"></div>
@@ -164,7 +168,7 @@
                         <li class="hide-if-mobile">- Free merchandise and prizes like ponchos and sunnies</li>
                         <li class="hide-if-mobile">- Rooftop viewing deck</li>
                     </ul>
-                    <a href="fleet.html" class="btn btn--orange">Book For Your Event</a>
+                    <a href="fleet.html#bus" class="btn btn--orange">Book For Your Event</a>
                 </div>
                 <img src="assets/img/fleet/bus-1.png" alt="Vanessa bus">
             </div>
@@ -181,9 +185,9 @@
                             and the famous spinning wheel
                         </li>
                     </ul>
-                    <a href="fleet.html" class="btn btn--orange">Book For Your Event</a>
+                    <a href="fleet.html#car" class="btn btn--orange">Book For Your Event</a>
                 </div>
-                <img src="assets/img/fleet/car-1.png" alt="Vanessa Bute">
+                <img src="assets/img/fleet/car-1.png" alt="Vanessa Van">
             </div>
 
             <div class="vehicles__gallery__body vehicles__gallery__body--van">
@@ -198,7 +202,7 @@
                             and the famous spinning wheel
                         </li>
                     </ul>
-                    <a href="fleet.html" class="btn btn--orange">Book For Your Event</a>
+                    <a href="fleet.html#van" class="btn btn--orange">Book For Your Event</a>
                 </div>
                 <img src="assets/img/fleet/van-1.png" alt="Vanessa Van">
             </div>
@@ -236,38 +240,50 @@
     <section id="social">
         <div class="tile">
             <a href="https://www.instagram.com/vanessabus/" target="_blank" data-clicked="0">
-                <img src="assets/img/instagram-1.jpg" alt="Instagram">
+                <img src="assets/img/vanessa-1.png" alt="Instagram Photo">
                 <p>Today is a good day. Happy International Chocolate day! Regram: @pana_chocolate #chocolate
                     #worldchocolateday</p>
             </a>
         </div>
         <div class="tile">
             <a href="https://www.instagram.com/vanessabus/" target="_blank" data-clicked="0">
-                <img src="assets/img/instagram-2.jpg" alt="Instagram">
+                <img src="assets/img/vanessa-2.png" alt="Instagram Photo">
                 <p>Did you hear the good news? Winter is a coming this Friday @mountainwatch</p>
             </a>
         </div>
         <div class="tile">
             <a href="https://www.instagram.com/vanessabus/" target="_blank" data-clicked="0">
-                <img src="assets/img/instagram-3.jpg" alt="Instagram">
+                <img src="assets/img/vanessa-3.png" alt="Instagram Photo">
                 <p>Out at the clerb tonight? Cab, train or designated driver home</p>
             </a>
         </div>
         <div class="tile">
             <a href="https://www.instagram.com/vanessabus/" target="_blank" data-clicked="0">
-                <img src="assets/img/instagram-4.jpg" alt="Instagram">
+                <img src="assets/img/vanessa-4.png" alt="Instagram Photo">
                 <p>#TBT before to my makeovers. How smooth was my rig?</p>
             </a>
         </div>
         <div class="tile">
             <a href="https://www.instagram.com/vanessabus/" target="_blank" data-clicked="0">
-                <img src="assets/img/instagram-5.jpg" alt="Instagram">
+                <img src="assets/img/vanessa-5.png" alt="Instagram Photo">
                 <p>In good news, @beyondthevalleyfest added an extra day. Now we can hang for four days!</p>
             </a>
         </div>
         <div class="tile">
             <a href="https://www.instagram.com/vanessabus/" target="_blank" data-clicked="0">
-                <img src="assets/img/instagram-6.jpg" alt="Instagram">
+                <img src="assets/img/vanessa-6.png" alt="Instagram Photo">
+                <p>I didn't choose the model life, it choose me.</p>
+            </a>
+        </div>
+        <div class="tile">
+            <a href="https://www.instagram.com/vanessabus/" target="_blank" data-clicked="0">
+                <img src="assets/img/vanessa-7.png" alt="Instagram Photo">
+                <p>I didn't choose the model life, it choose me.</p>
+            </a>
+        </div>
+        <div class="tile">
+            <a href="https://www.instagram.com/vanessabus/" target="_blank" data-clicked="0">
+                <img src="assets/img/vanessa-8.png" alt="Instagram Photo">
                 <p>I didn't choose the model life, it choose me.</p>
             </a>
         </div>
@@ -277,85 +293,83 @@
         <div class="gallery">
             <div class="gallery__slide">
                 <div class="gallery__body">
-                    <img src="assets/img/blog-header.jpg" alt="Blog Title">
+                    <a href='blog-entry.html'><img src="assets/img/blog-1.png" alt="Blog Title"></a>
                     <div class="text">
-                        <h3>8 Days Ago</h3>
-                        <p>Music festival season is upon us. And kicking things off is arguably the biggest, most
-                            popular
-                            one of them all, Coachella.</p>
+                        <h3>Blog post name to go here</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetu adisicing elit, sed do eiusmod tempor qui officia deserunt.</p>
+                        <a href='blog-entry.html'>Read More</a>
                     </div>
                 </div>
             </div>
             <div class="gallery__slide">
                 <div class="gallery__body">
-                    <img src="assets/img/blog-header.jpg" alt="Blog Title">
+                    <a href='blog-entry.html'><img src="assets/img/blog-2.png" alt="Blog Title"></a>
                     <div class="text">
-                        <h3>8 Days Ago</h3>
-                        <p>Music festival season is upon us. And kicking things off is arguably the biggest, most
-                            popular
-                            one of them all, Coachella.</p>
+                        <h3>Blog post name to go here</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetu adisicing elit, sed do eiusmod tempor qui officia deserunt.</p>
+                        <a href='blog-entry.html'>Read More</a>
                     </div>
                 </div>
             </div>
             <div class="gallery__slide">
                 <div class="gallery__body">
-                    <img src="assets/img/blog-header.jpg" alt="Blog Title">
+                    <a href='blog-entry.html'><img src="assets/img/blog-1.png" alt="Blog Title"></a>
                     <div class="text">
-                        <h3>8 Days Ago</h3>
-                        <p>Music festival season is upon us. And kicking things off is arguably the biggest, most
-                            popular
-                            one of them all, Coachella.</p>
+                        <h3>Blog post name to go here</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetu adisicing elit, sed do eiusmod tempor qui officia deserunt.</p>
+                        <a href='blog-entry.html'>Read More</a>
                     </div>
                 </div>
             </div>
             <div class="gallery__slide">
                 <div class="gallery__body">
-                    <img src="assets/img/blog-header.jpg" alt="Blog Title">
+                    <a href='blog-entry.html'><img src="assets/img/blog-2.png" alt="Blog Title"></a>
                     <div class="text">
-                        <h3>8 Days Ago</h3>
+                        <h3>Blog post name to go here</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetu adisicing elit, sed do eiusmod tempor qui officia deserunt.</p>
+                        <a href='blog-entry.html'>Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery__slide">
+                <div class="gallery__body">
+                    <a href='blog-entry.html'><img src="assets/img/blog-1.png" alt="Blog Title"></a>
+                    <div class="text">
+                        <h3>Blog post name to go here</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetu adisicing elit, sed do eiusmod tempor qui officia deserunt.</p>
+                        <a href='blog-entry.html'>Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery__slide">
+                <div class="gallery__body">
+                    <a href='blog-entry.html'><img src="assets/img/blog-2.png" alt="Blog Title"></a>
+                    <div class="text">
+                        <h3>Blog post name to go here</h3>
                         <p>Music festival season is upon us. And kicking things off is arguably the biggest, most
                             popular one of them all, Coachella.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="gallery__slide">
-                <div class="gallery__body">
-                    <img src="assets/img/blog-header.jpg" alt="Blog Title">
-                    <div class="text">
-                        <h3>8 Days Ago</h3>
-                        <p>Music festival season is upon us. And kicking things off is arguably the biggest, most
-                            popular
-                            one of them all, Coachella.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="gallery__slide">
-                <div class="gallery__body">
-                    <img src="assets/img/blog-header.jpg" alt="Blog Title">
-                    <div class="text">
-                        <h3>8 Days Ago</h3>
-                        <p>Music festival season is upon us. And kicking things off is arguably the biggest, most
-                            popular one of them all, Coachella.</p>
+                            <a href='blog-entry.html'>Read More</a>
                     </div>
                 </div>
             </div>
         </div>
-        <a href="#" class="btn-see-more">See More Via Our Blog</a>
+        <a href="blog-page.html" class="btn btn--orange">See More Posts</a>
     </section>
 
     <footer>
         <a href="index.html" class="brand">
             <img src="assets/img/logo.png" alt="Vanessa">
         </a>
-        <div class="links">
-            <a href="https://www.tac.vic.gov.au" target="_blank">TAC</a><span>|</span>
-            <a href="http://www.howsafeisyourfirstcar.com.au" target="_blank">How Safe Is Your First
-                Car</a><span>|</span>
-            <a href="https://www.towardszero.vic.gov.au" target="_blank">Towards Zero</a><span>|</span><br>
-            <a href="privacy-policy.html">Privacy Policy</a><span>|</span>
-            <a href="contact-us.html">Contact Us</a><span>|</span>
-            <a href="terms-and-conditions.html">Terms and Conditions</a>
-        </div>
+        <ul class="links">
+            <li><a href="https://www.tac.vic.gov.au" target="_blank">TAC</a></li>
+            <li><a href="http://www.howsafeisyourfirstcar.com.au" target="_blank">How Safe Is Your First
+                Car</a></li>
+            <li><a href="https://www.towardszero.vic.gov.au" target="_blank">Towards Zero</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
+            <li><a href='#'>Newsletter</a></li>
+        </ul>
     </footer>
 </main>
 
@@ -363,18 +377,13 @@
     <span class="close"><i class="fa fa-times"></i></span>
     <div class="newsletter-modal--form">
         <h3>Events, competitions, prizes - is this the best subscription ever? Only one way to find out.</h3>
-        <form action="" method="post">
-            <input type="text" name="name" placeholder="Name" required>
-            <input type="text" name="surname" placeholder="Surname" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <label for="terms_and_conditons">
-                <input type="checkbox" name="terms_and_conditons" id="terms_and_conditons" required> I accept the terms
-                & conditions
-            </label>
-            <label for="policy">
-                <input type="checkbox" name="policy" id="policy" required> I accept the privacy policy
-            </label>
-            <button class="btn btn--orange">Sign Up</button>
+        <form name="newsletter" action="" method="post">
+            <input type="text" title="First Name" name="name" placeholder="First Name" aria-label="First Name" required>
+            <input type="text" title="Surname" name="surname" placeholder="Surname" aria-label="Last Name" required>
+            <input type="email" title="Email" name="email" placeholder="Email" aria-label="Email" required>
+             <label>We are committed to protecting your privacy. Your e-mail address will not be disclosed, added to a mailing list, or used for any other purpose without your consent. View our <a href='piracy-policy.html'>Privacy Policy</a>.</label>
+
+            <button type='submit' class="btn btn--orange">Sign Up</button>
         </form>
     </div>
     <div class="newsletter-modal--confirmation">
@@ -390,6 +399,8 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
 <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery-fracs/0.15.1/jquery.fracs.min.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
 <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 </html>
