@@ -11,13 +11,11 @@
       object-fit: cover;
     }
   }
-
-
   .blog{
     bottom:3em;
     position: fixed;
-        min-height: 275px;
-        background-color: white;
+        // min-height: 275px;
+    background-color: white;
     width:100%;
     .hero__text{
       .text{
@@ -49,71 +47,61 @@
       }
     }
     .blog__gallery{
+      @include if-mobile {
+        padding: 0;
+      }
 
-    @include if-mobile {
-      padding: 0;
-    }
-
-    .blog__slide {
-      @include if-landscape {
+      .blog__slide {
+        @include if-landscape {
+          height:35vh;
+          display: inline-block;
+          width:24%;
+        }
         height:35vh;
-        display: inline-block;
         width:24%;
+        display:inline-block;
       }
-      height:35vh;
-      width:24%;
-      display:inline-block;
-    }
-    .blog__body{
-      height:100%;
-
-
-      img{
-
-      }
-      .text{
-        border-right:1px solid $text-light;
-        background-color: white;
-
-      }
-      h3 {
-        font-size: 0.9em;
-        padding: 0.5em 1em 0 1em;
-        font-family: 'Helvetica';
-        text-transform: uppercase;
-        font-weight: normal;
-        text-shadow:none;
-      }
-
-      p {
-        font-size: 0.8em;
-        font-family: 'Helvetica';
-        font-weight: lighter;
-        color: black;
-        padding: 0 1.2em;
-        text-shadow:none;
-        text-align: center;
-      }
-      img {
-        width: 100%;
-        object-fit: cover;
-        height: 70%;
-
-      }
-      a {
-        font-size: 0.8em;
-        text-transform: uppercase;
-        color: #a7a7a7;
-        text-decoration: underline;
+      .blog__body{
+        height:100%;
+        img {
+          width: 100%;
+          object-fit: cover;
+          height: 70%;
+        }
+        .text{
+          border-right:1px solid $text-light;
+          background-color: white;
+          h3 {
+            font-size: 0.9em;
+            padding: 0.5em 1em 0 1em;
+            font-family: 'Helvetica';
+            text-transform: uppercase;
+            font-weight: normal;
+            text-shadow:none;
+          }
+          p {
+            font-size: 0.8em;
+            font-family: 'Helvetica';
+            font-weight: lighter;
+            color: black;
+            padding: 0 1.2em;
+            text-shadow:none;
+            text-align: center;
+          }
+          a {
+            font-size: 0.8em;
+            text-transform: uppercase;
+            color: #a7a7a7;
+            text-decoration: underline;
+          }
+        }
       }
     }
   }
-  }
-
   .blog__navigation {
     position: absolute;
     color: $text-light;
-    top: 75%;
+    top: 60%;
     transform: translateY(-50%);
     font-size: 3em;
     z-index: 1;

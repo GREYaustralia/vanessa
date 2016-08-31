@@ -16,7 +16,6 @@
   .text-box {
     position: absolute;
     left: 0;
-    // margin: 3em 10em;
     margin: 1em 5em;
     text-align: left;
     width:40vw;
@@ -38,7 +37,6 @@
     align-items: flex-end;
     width: 100%;
     justify-content: center;
-    // margin-bottom: 10vh;
     position: absolute;
     bottom:0;
 
@@ -73,14 +71,6 @@
       &:hover, &.hover {
         animation: van-in 0.2s forwards;
       }
-
-      // @include if-large-desktop {
-      //  outline-width: 2px;
-      //  outline-color: red;
-      //  outline-style: solid;
-      //  transform:scale(2);
-
-      // }
     }
 
     .car {
@@ -96,14 +86,6 @@
       &:hover, &.hover {
         animation: car-in 0.2s forwards;
       }
-
-      // @include if-large-desktop {
-      //  outline-width: 2px;
-      //  outline-color: red;
-      //  outline-style: solid;
-      //  transform:scale(2);
-
-      // }
     }
 
     .bus {
@@ -118,14 +100,6 @@
       &:hover, &.hover {
         animation: bus-in 0.3s forwards;
       }
-
-      // @include if-large-desktop {
-      //  outline-width: 2px;
-      //  outline-color: red;
-      //  outline-style: solid;
-      //  transform:scale(2);
-
-      // }
     }
   }
 
