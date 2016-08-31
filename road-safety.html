@@ -158,9 +158,30 @@
             <li><a href="privacy-policy.html">Privacy Policy</a></li>
             <li><a href="contact-us.html">Contact Us</a></li>
             <li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
+            <li><a class='news' href='#'>Newsletter</a></li>
         </ul>
     </footer>
 </main>
+
+<div class="newsletter-modal">
+    <span class="close"><i class="fa fa-times"></i></span>
+    <div class="newsletter-modal--form">
+        <h3>Events, competitions, prizes - is this the best subscription ever? Only one way to find out.</h3>
+        <form name="newsletter" action="" method="post">
+            <input type="text" title="First Name" name="name" placeholder="First Name" aria-label="First Name" required>
+            <input type="text" title="Surname" name="surname" placeholder="Surname" aria-label="Last Name" required>
+            <input type="email" title="Email" name="email" placeholder="Email" aria-label="Email" required>
+             <label>We are committed to protecting your privacy. Your e-mail address will not be disclosed, added to a mailing list, or used for any other purpose without your consent. View our <a href='piracy-policy.html'>Privacy Policy</a>.</label>
+
+            <button type='submit' class="btn btn--orange">Sign Up</button>
+        </form>
+    </div>
+    <div class="newsletter-modal--confirmation">
+        <h3>Thanks for signing up!</h3>
+        <p class="text-dark">We’ll be in touch, in the meantime go look at some cat pictures, I hear the internet’s full of them.</p>
+        <button class="btn btn--orange btn--close-modal">Close</button>
+    </div>
+</div>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 <script type="text/javascript"
@@ -168,6 +189,8 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
 <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery-fracs/0.15.1/jquery.fracs.min.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
 <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 </html>

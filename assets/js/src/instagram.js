@@ -1,5 +1,7 @@
 // //browsify in order to work
 
+// this is currently using my personal access token need to aquire vanessabus access token first
+
 // var ig = require('instagram-node').instagram();
 // var accessToken = '811228545.52f3bcb.62b9ef70ea6e458fb1b85eabf15563e9'
 // ig.use({ access_token: accessToken});

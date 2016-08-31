@@ -328,6 +328,7 @@ p {
 
   .btn {
     font-size: 1.2em;
+    float:right;
 
     @include if-mobile {
       width: 100%;

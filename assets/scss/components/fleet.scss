@@ -19,6 +19,7 @@
     margin: 1em 5em;
     text-align: left;
     width:40vw;
+    z-index: 1;
 
     @include if-laptop-and-smaller{
       width:50vw;

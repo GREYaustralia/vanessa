@@ -8,20 +8,26 @@ $(document).ready(function () {
         }, 200);
     });
 
+    $('.news').on('click', function(){
+        sessionStorage.setItem('newsletter-modal', 'false')
+        $('.newsletter-modal').addClass('visible');
+    })
+
     // Submit newsletter form
     $('.newsletter-modal form').on('submit', function (e) {
-        // if ($(this).valid()){
-            e.preventDefault();
-            sessionStorage.setItem('newsletter-modal', 'true')
+        e.preventDefault();
+        sessionStorage.setItem('newsletter-modal', 'true')
 
         // Send ajax post request
-            $.post('ajax.php', $(this).serialize());
+        $.post('ajax.php', $(this).serialize());
+
 
             // Hide form
+        if ($(this).valid()){
             $('.newsletter-modal--form').hide();
 
             // Show confirmation text
             $('.newsletter-modal--confirmation').show();
-        // }
+        }
     });
 });
