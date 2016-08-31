@@ -17,16 +17,16 @@
     <a href="#hero" class="brand"><img src="assets/img/logo.png" alt="Vanessa Logo"></a>
     <div class="social-media-icons">
         <ul>
-            <li><a href="https://www.facebook.com/ilikevanessa" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.facebook.com/ilikevanessa" name='facebook' target="_blank"><i class="fa fa-facebook"></i></a></li>
             <li><a href="https://www.instagram.com/vanessabus/" target="_blank"><i class="fa fa-instagram"></i></a></li>
         </ul>
     </div>
     <div class="search">
         <form action="search.html" method="get">
-            <input type="search" name="search" placeholder=" &#xf002; Search">
+            <input type="search" title='search bar' name="search" placeholder=" &#xf002; Search " aria-label="Search">
         </form>
     </div>
-    <button class="hamburger">
+    <button class="hamburger" title="navigation" tabindex="0">
         <span></span>
         <span></span>
         <span></span>
@@ -44,15 +44,15 @@
     </ul>
 </nav>
 
-<a href="#hero" class="nav-btn nav-btn--up"><i class="fa fa-angle-up"></i></a>
-<a href="#about" class="nav-btn nav-btn--down"><i class="fa fa-angle-down"></i></a>
-<a href="#hero" class="btn btn--back-to-top btn--white">Back to the top</a>
+<a href="#hero" class="nav-btn nav-btn--up" title="Previous Section"><i class="fa fa-angle-up"></i></a>
+<a href="#about" class="nav-btn nav-btn--down" title="Next Section"><i class="fa fa-angle-down"></i></a>
+<a href="#hero" class="btn btn--back-to-top btn--white" title="Back to top">Back to the top</a>
 
 <main class='main'>
     <div class="social-media-icons-fixed">
         <ul>
-            <li><a href="https://www.facebook.com/ilikevanessa" target="_blank"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://www.instagram.com/vanessabus/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/ilikevanessa" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/vanessabus/" target="_blank" title="instagram"><i class="fa fa-instagram"></i></a></li>
         </ul>
     </div>
 
@@ -368,7 +368,7 @@
             <li><a href="privacy-policy.html">Privacy Policy</a></li>
             <li><a href="contact-us.html">Contact Us</a></li>
             <li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
-            <li><a href='#'>    </a></li>
+            <li><a href='#'>Newsletter</a></li>
         </ul>
     </footer>
 </main>
@@ -378,9 +378,9 @@
     <div class="newsletter-modal--form">
         <h3>Events, competitions, prizes - is this the best subscription ever? Only one way to find out.</h3>
         <form name="newsletter" action="" method="post">
-            <input type="text" name="name" placeholder="Name" required>
-            <input type="text" name="surname" placeholder="Surname" required>
-            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" title="First Name" name="name" placeholder="First Name" aria-label="First Name" required>
+            <input type="text" title="Surname" name="surname" placeholder="Surname" aria-label="Last Name" required>
+            <input type="email" title="Email" name="email" placeholder="Email" aria-label="Email" required>
              <label>We are committed to protecting your privacy. Your e-mail address will not be disclosed, added to a mailing list, or used for any other purpose without your consent. View our <a href='piracy-policy.html'>Privacy Policy</a>.</label>
 
             <button type='submit' class="btn btn--orange">Sign Up</button>

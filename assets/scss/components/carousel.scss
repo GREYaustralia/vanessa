@@ -62,11 +62,11 @@
       .element__toggle{
         font-family: 'FontAwesome' ;
         font-size: 6em;
-        color:$text-light;
+        color:#949494;
         right:12px;
         position: absolute;
         opacity:0.6;
-        bottom:0;
+        bottom:.5em;
         border:none;
         cursor: pointer;
         // content: "New text";

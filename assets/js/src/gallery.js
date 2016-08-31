@@ -1,12 +1,12 @@
 $(document).ready(function () {
     // Blog post gallery
     $('.gallery').slick({
-        infinite: true,
+        infinite: false,
         slidesToShow: 3,
         slidesToScroll: 3,
         centerMode: false,
-        prevArrow: '<button class="gallery__navigation gallery__navigation--prev"><i class="fa fa-angle-left"></i></button>',
-        nextArrow: '<button class="gallery__navigation gallery__navigation--next"><i class="fa fa-angle-right"></i></button>',
+        prevArrow: '<button class="gallery__navigation gallery__navigation--prev" title="Last Entries"><i class="fa fa-angle-left"></i></button>',
+        nextArrow: '<button class="gallery__navigation gallery__navigation--next" title="Next Entries"><i class="fa fa-angle-right"></i></button>',
         responsive: [
 
             {
@@ -39,7 +39,7 @@ $(document).ready(function () {
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow: '<button class="vehicles__gallery__navigation vehicles__gallery__navigation--prev"><i class="fa fa-angle-left"></i></button>',
-        nextArrow: '<button class="vehicles__gallery__navigation vehicles__gallery__navigation--next"><i class="fa fa-angle-right"></i></button>',
+        prevArrow: '<button class="vehicles__gallery__navigation vehicles__gallery__navigation--prev" title="Last Vehicle"><i class="fa fa-angle-left"></i></button>',
+        nextArrow: '<button class="vehicles__gallery__navigation vehicles__gallery__navigation--next" title="Next Vehicle"><i class="fa fa-angle-right"></i></button>',
     });
 });

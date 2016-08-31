@@ -10,8 +10,8 @@ $(document).ready(function () {
         slidesToShow: 4,
         slidesToScroll: 4,
         centerMode: false,
-        prevArrow: '<button class="blog__navigation blog__navigation--prev"><i class="fa fa-angle-left"></i></button>',
-        nextArrow: '<button class="blog__navigation blog__navigation--next"><i class="fa fa-angle-right"></i></button>',
+        prevArrow: '<button class="blog__navigation blog__navigation--prev" title="Last Entries"><i class="fa fa-angle-left"></i></button>',
+        nextArrow: '<button class="blog__navigation blog__navigation--next" title="Next Entries"><i class="fa fa-angle-right"></i></button>',
         responsive: [
             {
                 breakpoint: 768,
@@ -34,15 +34,15 @@ $(document).ready(function () {
         infinite: true,
         slidesToShow: 2,
         slidesToScroll: 2,
-        centerMode: false,
-        prevArrow: '<button class="blog__navigation blog__navigation--prev"><i class="fa fa-angle-left"></i></button>',
-        nextArrow: '<button class="blog__navigation blog__navigation--next"><i class="fa fa-angle-right"></i></button>',
+        // centerMode: true,
+        prevArrow: '<button class="blog__navigation blog__navigation--prev" title="Last Entries"><i class="fa fa-angle-left"></i></button>',
+        nextArrow: '<button class="blog__navigation blog__navigation--next" title="Next Entries"><i class="fa fa-angle-right"></i></button>',
         responsive: [
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
                 }
             },
             {

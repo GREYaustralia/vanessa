@@ -172,7 +172,7 @@ p {
   font-size: 1.5em;
   border: 0.05em solid #fff;
   background: $text-dark;
-  color: white;
+  color: $text-dark;
 
   &.btn--transparent {
     background: transparent;
@@ -286,7 +286,7 @@ p {
   }
 
   h3 {
-    color: $text-orange;
+    color: $text-red;
     font-family: "Bushcraft Textured";
     font-size: 1.5em;
     margin-bottom: 0.5em;
@@ -320,6 +320,9 @@ p {
     label {
       display: block;
       cursor: pointer;
+      a{
+        color:$text-red;
+      }
     }
   }
 

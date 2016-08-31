@@ -48,16 +48,16 @@
 <main>
     <section id="one-page-section">
         <form action="" name="contact-us" id="contact-us" method="post" enctype="multipart/form-data">
-            <select name="subject">
+            <select name="subject" title="Select Subject" aria-label="Select Subject">
                 <option value="enquiry">General Enquiry</option>
                 <!-- <option value="internships">Vanessa Internships</option> -->
                 <option value="fleet">Vanessa Fleet</option>
             </select>
-            <input type="text" name="name" placeholder="Name" required>
-            <input type="text" name="surname" placeholder="Surname" required>
-            <input type="text" name="phone_number" placeholder="Phone Number" required>
-            <input type="text" name="email" placeholder="Email" required>
-            <textarea name="message" placeholder="What can we help you with?" data-placeholder-enquiry="What can we help you with?" data-placeholder-internships="What can you bring to the Vanessa team?" data-placeholder-fleet="Tell us more about your event?" required></textarea>
+            <input type="text" title="First Name" name="name" placeholder="First Name" aria-label="First Name" required>
+            <input type="text" title="Last Name" name="surname" placeholder="Surname" aria-label="Last Name" required>
+            <input type="text" title="Phone Number" name="phone_number" placeholder="Phone Number" aria-label="Phone Number" required>
+            <input type="text" title="Email" name="email" placeholder="Email" aria-label="Email" required>
+            <textarea name="message" placeholder="What can we help you with?" data-placeholder-enquiry="What can we help you with?" data-placeholder-internships="What can you bring to the Vanessa team?" data-placeholder-fleet="Tell us more about your event?" title="Message" aria-label="Message" required></textarea>
             <button type="submit">Submit</button>
             <label class='privacypolicy'>We are committed to protecting your privacy. Your e-mail address will not be disclosed, added to a mailing list, or used for any other purpose without your consent. View our <a href='piracy-policy.html'>Privacy Policy</a>.</label>
         </form>
@@ -80,7 +80,7 @@
 
     <footer>
         <a href="index.html" class="brand">
-            <img src="assets/img/logo.png" alt="Vanessa">
+            <img src="assets/img/logo.png" alt="Vanessa Logo">
         </a>
         <ul class="links">
             <li><a href="https://www.tac.vic.gov.au" target="_blank">TAC</a></li>
