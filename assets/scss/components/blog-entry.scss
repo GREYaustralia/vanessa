@@ -5,6 +5,9 @@
   margin:0 auto;
   height:auto;
   position: relative;
+  @include if-mobile{
+    width:90vw;
+  }
 
   .blog__content{
     h1 {
@@ -14,7 +17,6 @@
       padding: 1em 1em 0 1em;
       font-size: 3em;
       cursor: pointer;
-      text-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
     }
 
     p{
@@ -38,25 +40,19 @@
 .blog__section{
   width:60vw;
   overflow: hidden;
+  @include if-mobile {
+    width:90vw
+  }
+
   .blog__entries{
-    // margin: 30px auto 50px;
-    // width:50%;
-  // position: relative;
-    @include if-mobile {
-      // padding: 0;
-    }
+
 
     .blog__slide {
-      // display: block;
       float:left;
       @include if-landscape {
       }
     }
-    // .blog__slide:nth-child(odd) {
-    //     float: left;
-    //   }
-    // .blog__slide:nth-child(even) {
-    //     float: right;
+
     //   }
     .blog__body{
       margin: 2.5%;
@@ -103,8 +99,14 @@
     z-index: 1;
     &.blog__navigation--prev {
       left: -1em;
+      @include if-mobile {
+        left:-0.4em;
+      }
     }
     &.blog__navigation--next {
       right: -1em;
+      @include if-mobile {
+        right:-0.4em;
+      }
   }
 }

@@ -19,8 +19,8 @@
         message: "required",
       },
       messages: {
-        name: "Please enter your firstname",
-        surname: "Please enter your lastname",
+        name: "Please enter your first name",
+        surname: "Please enter your surname",
         phone_number: "Please enter a valid Phone Number Including Area Code",
         email: "Please enter a valid email address",
         message: "You Need to write something!"
