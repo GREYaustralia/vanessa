@@ -73,6 +73,10 @@
 
     @include if-mobile {
       padding: 1.5em;
+      height:auto;
+      p {
+        font-size: 0.8em;
+      }
     }
   }
 }

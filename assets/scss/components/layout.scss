@@ -81,7 +81,7 @@ button {
 }
 
 a, button, input, textarea {
-  outline: none;
+  outline-color: $text-orange;
   color:$text-orange
 }
 
@@ -200,16 +200,28 @@ p {
   &.btn--orange {
     background: $text-orange;
     border-color: $text-orange;
+    &:hover, &:focus {
+      background: $text-red;
+      border-color: $text-red;
+    }
   }
 
   &.btn--red {
     background: $text-red;
     border-color: $text-red;
+    &:hover, &:focus {
+      background: $text-orange;
+      border-color: $text-orange;
+    }
   }
 
   &.btn--white {
     background: white;
     color: $text-dark;
+    &:hover, &:focus {
+      background-color: $text-red;
+      border-color: $text-red;
+    }
   }
 
   &.btn--rounded {

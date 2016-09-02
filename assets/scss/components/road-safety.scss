@@ -104,6 +104,7 @@
   position: relative;
 
   .text-box {
+
     width: 50vw;
 
     h2 {
@@ -137,6 +138,9 @@
       font-size: 1em;
       margin-bottom: 1.5em;
       line-height: 1.5em;
+      @include if-mobile{
+        margin-bottom: 0;
+      }
     }
     // a{
     //   color:$text-orange;

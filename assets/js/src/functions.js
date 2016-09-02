@@ -43,7 +43,7 @@ function anchorScrollDown(navButton, sections) {
 }
 
 function topOfPage() {
-    return $body.scrollTop() === 0;
+    return $('main').scrollTop() === 0;
 }
 
 function bottomOfPage() {

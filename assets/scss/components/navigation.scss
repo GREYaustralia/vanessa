@@ -13,8 +13,9 @@ nav {
   z-index: 2;
 
   .social-media-icons {
+    margin-right: auto;
     position: relative;
-    right: 3em;
+    // right: 1.5em;
 
     @include media('>tablet') {
       display: none;
@@ -26,7 +27,7 @@ nav {
 
     li {
       float: left;
-      margin-left: 1.5em;
+      // margin-left: 1.5em;
       height: 2em;
       width: 2em;
       background: white;
@@ -38,6 +39,9 @@ nav {
       a {
         color: $text-dark;
       }
+      &:first-child {
+        margin-right: 1.5em;
+      }
     }
   }
 
@@ -45,6 +49,9 @@ nav {
     margin-right: auto;
     img {
       height: $nav-img-height;
+    }
+    @include if-mobile {
+      display:none;
     }
   }
 
@@ -58,14 +65,37 @@ nav {
 
 .search{
   font-family: "Helvetica", "FontAwesome";
-
-  input:focus{
-    background-color: $text-light;
+  input{
+    border:1px solid $text-light;
     margin: 0 1em 0 0;
-    // height:1em;
     padding:0.3em;
     padding-left: .5em;
     border-radius: 1em;
+    width:6em;
+    &:placeholder{
+      color:$text-grey
+    }
+    &::-webkit-input-placeholder {
+      color:$text-grey;
+    }
+    &:-ms-input-placeholder {
+      color: $text-grey;
+    }
+    &::-moz-placeholder {
+      color: $text-grey;
+    }
+    &:-moz-placeholder {
+      color: $text-grey;
+    }
+    &:focus{
+      background-color: $text-light;
+      width:12em;
+      -webkit-transition: width .5s ease;
+      -moz-transition: width .5s ease;
+      -o-transition: width .5s ease;
+      -ms-transition: width .5s ease;
+      transition: width .5s ease;
+    }
   }
 }
 
@@ -162,10 +192,10 @@ ul.menu {
       transition: 0.2s;
       font-size: 1.2em;
       cursor: text;
-
       &::placeholder {
         color: white;
       }
+
     }
   }
 
@@ -180,6 +210,9 @@ ul.menu {
       position: absolute;
       bottom: 0;
       width: 100%;
+      @include if-mobile {
+        position: relative;
+      }
 
       @include if-landscape {
         position: relative;

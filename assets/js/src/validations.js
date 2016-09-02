@@ -2,6 +2,9 @@
     $.validator.addMethod('phonenumber', function (value) {
       return /^0[0-9]{9}/.test(value);
     });
+    $.validator.methods.email = function( value, element ) {
+      return this.optional( element ) || /[a-z]+@[a-z]+\.[a-z]+/.test( value );
+    }
 
   $('body').children().not('nav').find('form').validate(
     {
@@ -25,9 +28,9 @@
         email: "Please enter a valid email address",
         message: "You Need to write something!"
       },
-      submitHandler: function(form) {
-        form.submit();
-      }
+      // submitHandler: function(form) {
+      //   // form.submit();
+      // }
     }
   );
 // }
