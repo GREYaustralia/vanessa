@@ -4,12 +4,12 @@
  * Road Safety
  */
 
-#road-safety {
+.road-safety {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 
-  #drug-driving, #drink-driving, #drowsy-driving, #vehicle-safety, #distractions, #prepare-to-party {
+  .drug-driving, .drink-driving, .drowsy-driving, .vehicle-safety, .distractions, .prepare-to-party {
     @include full-height(2);
     width: 33.33vw;
     flex-direction: column;
@@ -51,7 +51,7 @@
   }
 }
 
-#drug-driving {
+.drug-driving {
   @include background('drug-driving.jpg');
 
   &:hover, &:active, &:focus {
@@ -59,7 +59,7 @@
   }
 }
 
-#drink-driving {
+.drink-driving {
   @include background('drink-driving.jpg');
 
   &:hover, &:active, &:focus {
@@ -67,7 +67,7 @@
   }
 }
 
-#drowsy-driving {
+.drowsy-driving {
   @include background('drowsy-driving.jpg');
 
   &:hover, &:active, &:focus {
@@ -75,7 +75,7 @@
   }
 }
 
-#distractions {
+.distractions {
   @include background('distractions.jpg');
 
   &:hover, &:active, &:focus {
@@ -83,7 +83,7 @@
   }
 }
 
-#vehicle-safety {
+.vehicle-safety {
   @include background('vehicle-safety.jpg');
 
   &:hover, &:active, &:focus {
@@ -91,7 +91,7 @@
   }
 }
 
-#prepare-to-party {
+.prepare-to-party {
   @include background('prepare-to-party.jpg');
 
   &:hover, &:active, &:focus {
@@ -99,11 +99,12 @@
   }
 }
 
-#road-safety-info, #road-safety-drug, #road-safety-drowsy, #road-safety-vehicle, #road-safety-distractions, #road-safety-party, #road-safety-drink {
+.road-safety-info, .road-safety-drug, .road-safety-drowsy, .road-safety-vehicle, .road-safety-distractions, .road-safety-party, .road-safety-drink {
   color: white;
   position: relative;
 
   .text-box {
+
     width: 50vw;
 
     h2 {
@@ -137,6 +138,9 @@
       font-size: 1em;
       margin-bottom: 1.5em;
       line-height: 1.5em;
+      @include if-mobile{
+        margin-bottom: 0;
+      }
     }
     // a{
     //   color:$text-orange;
@@ -148,7 +152,7 @@
   }
 }
 
-#road-safety-info {
+.road-safety-info {
   @include section(column);
   @include full-height(1);
   @include background-opacity('road-safety-intro.jpg', 0.5);
@@ -168,7 +172,7 @@
   }
 }
 
-#road-safety-drink {
+.road-safety-drink {
   @extend %info-section;
 
   .background {
@@ -177,7 +181,7 @@
   }
 }
 
-#road-safety-drug {
+.road-safety-drug {
   @extend %info-section;
 
   .background {
@@ -185,7 +189,7 @@
   }
 }
 
-#road-safety-drowsy {
+.road-safety-drowsy {
   @extend %info-section;
 
   .background {
@@ -193,7 +197,7 @@
   }
 }
 
-#road-safety-vehicle {
+.road-safety-vehicle {
   @extend %info-section;
   @include full-height-with-footer;
 
@@ -202,7 +206,7 @@
   }
 }
 
-#road-safety-distractions {
+.road-safety-distractions {
   @extend %info-section;
 
   .background {
@@ -210,7 +214,7 @@
   }
 }
 
-#road-safety-party {
+.road-safety-party {
   @extend %info-section;
 
   .background {

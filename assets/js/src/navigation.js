@@ -8,4 +8,9 @@ $(document).ready(function () {
         $('.hamburger').removeClass('open');
         $('ul.menu').removeClass('open');
     });
+    // $('.search input').on('focus', function(){
+    //   $('.social-media-icons').hide()
+    // }).on('focusout', function(){
+    //   $('.social-media-icons').show()
+    // })
 });

@@ -1,6 +1,6 @@
 @import "modules";
 
-#one-page-section {
+.one-page-section {
   @include full-height-with-footer();
   background: black;
   display: flex;

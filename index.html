@@ -56,7 +56,7 @@
         </ul>
     </div>
 
-    <section id="hero" class="active">
+    <section id="hero" class="hero active">
         <div class="carousel">
             <ul class="carousel__slides">
                 <li>
@@ -64,6 +64,7 @@
                         <img src="assets/img/logo-full.png" alt="Vanessa Header Background" description="Screen Grab of a crowd dancing at a festival">
                         <video autoplay loop muted id="crowd" poster="assets/img/crowd.jpg">
                             <source src="assets/video/crowd.webm" type="video/webm">
+                            <source src="assets/video/crowd.mp4" type="video/mp4">
                         </video>
                         <button class='element__toggle'>&#xf04c</button>
                     </div>
@@ -80,7 +81,7 @@
         </div>
     </section>
 
-    <section id="about">
+    <section id="about" class="about">
         <div class="text-box">
             <p>Welcome to the zero generation.
                 Grew up in the zeros. Drink zeros. Have zero dollars.
@@ -94,16 +95,16 @@
         </div>
     </section>
 
-    <section id="road-safety">
+    <section id="road-safety" class="road-safety">
         <a href="road-safety.html">
-            <div id="drink-driving">
+            <div id="drink-driving" class="drink-driving">
                 <h3>Drink Driving</h3>
                 <p>Drink driving can be dangerous, and not just because rosé is hard to get out of car upholstery.
                     Luckily there’s a really simple way to avoid drink driving.</p>
             </div>
         </a>
         <a href="road-safety.html">
-            <div id="drug-driving">
+            <div id="drug-driving" class="drug-driving">
                 <h3>Drug Driving</h3>
                 <p>If you’re taking anything stronger than a Panadol there’s a good chance it’s going to affect your
                     driving ability – especially if said drug isn’t exactly legal – so it’s a good idea to avoid mixing
@@ -111,36 +112,36 @@
             </div>
         </a>
         <a href="road-safety.html">
-            <div id="distractions">
+            <div id="distractions" class="distractions">
                 <h3>Distractions</h3>
                 <p>It doesn’t matter how good the latest Snapchat filter is, it can wait until you’re out of the car.
                     Would you really want your last words to be the smiling poo emoji?</p>
             </div>
         </a>
         <a href="road-safety.html">
-            <div id="drowsy-driving">
+            <div id="drowsy-driving" class="distractions">
                 <h3>Tired Driving</h3>
                 <p>One minute you’re driving, the next you’re sitting your high school exams in your underwear, and
                     that’s not even the worst part – fatigue can be fatal in the blink of an eye.</p>
             </div>
         </a>
         <a href="road-safety.html">
-            <div id="prepare-to-party">
+            <div id="prepare-to-party" class="prepare-to-party">
                 <h3>Prepare to Party</h3>
                 <p>The Beastie Boys fought tooth and nail for your right to party, so make it count, plan ahead. Nothing
                     spoils a good night like getting stranded without a lift.</p>
             </div>
         </a>
         <a href="road-safety.html">
-            <div id="vehicle-safety">
+            <div id="vehicle-safety" class="vehicle-safety">
                 <h3>Vehicle Safety</h3>
-                <p>You don’t need a boxy 90’s Volvo to be safe these days. Safe cars come in a variety of colours, types
-                    and best of all, they can fit even the thriftiest of budgets.</p>
+                <p>You don’t need a boxy 90’s Volvo to be safe these days. Safe cars come in a variety of colours, sizes
+                    and best of all, the ability to fit even the thriftiest of budgets.</p>
             </div>
         </a>
     </section>
 
-    <section id="fleet">
+    <section id="fleet" class="fleet">
         <!-- <img src='assets/img/fleet.jpg'> -->
         <div class="text-box">
             <p>The Vanessa Fleet consists of our bus, minivan and Bute. It’s the vehicular equivalent of the Ice Age
@@ -209,7 +210,7 @@
         </div>
     </section>
 
-    <section id="internship">
+    <section id="internship" class="internship">
         <div class="text-box">
             <h3 class="text-red">Vanessa Internships</h3>
             <p class="text-red">Want a chance to land your dream job, heading to some of the biggest music festivals
@@ -224,10 +225,10 @@
         </div>
     </section>
 
-    <section id="hsiyfc">
+    <section id="hsiyfc" class="hsiyfc">
         <div class="text-box">
-            <p>Most of us wouldn’t know a safe car from a potato. Luckily the Internet is here to help. Select which
-                budget suits you and search through a smorgasbord of safe cars for whatever cash you’ve got.</p>
+            <p>Most of us wouldn’t know a safe car from a potato. Luckily the Internet is here to help. Select your
+                budget and search through a smorgasbord of safe cars with whatever cash you’ve got.</p>
             <div class="row price-buttons">
                 <button>Cars Under $5,000</button>
                 <button>Cars Under $10,000</button>
@@ -237,7 +238,7 @@
         </div>
     </section>
 
-    <section id="social">
+    <section id="social" class="social">
         <div class="tile">
             <a href="https://www.instagram.com/vanessabus/" target="_blank" data-clicked="0">
                 <img src="assets/img/vanessa-1.png" alt="Instagram Photo">
@@ -289,7 +290,7 @@
         </div>
     </section>
 
-    <section id="blog">
+    <section id="blog" class="blog">
         <div class="gallery">
             <div class="gallery__slide">
                 <div class="gallery__body">
@@ -394,13 +395,7 @@
 </div>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.1/jquery.flexslider.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
-<script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-fracs/0.15.1/jquery.fracs.min.js"></script>
-<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+
 <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 @import 'modules';
 
-#blog-page{
+.blog-page{
   @include full-height-with-footer;
 
   .blog__hero{
@@ -11,7 +11,7 @@
       object-fit: cover;
     }
   }
-  .blog{
+  .blog__list{
     bottom:3em;
     position: fixed;
         // min-height: 275px;

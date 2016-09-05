@@ -1,6 +1,6 @@
 @import 'modules';
 
-#fleet {
+.fleet {
   background: url($img-base-path + "fleet.jpg") center bottom;
   background-size: cover;
   display: flex;
