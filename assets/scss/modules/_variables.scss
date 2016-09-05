@@ -34,7 +34,7 @@ $media-expressions: (
         'handheld':   'handheld',
         'landscape':  '(orientation: landscape)',
         'portrait':   '(orientation: portrait)',
-        'retina1x':   '(-webkit-device-pixel-ratio: 1), (moz-device-pixel-ratio: 1), (device-pixel-ratio: 1), (-ms-device-pixel-ratio: 1), (resolution: 1dppx)',
-        'retina2x':   '(-webkit-device-pixel-ratio: 2), (moz-device-pixel-ratio: 2), (device-pixel-ratio: 2), (-ms-device-pixel-ratio: 2), (resolution: 2dppx), (min-resolution: 192dpi), (min-resolution: 2dppx)',
-        'retina3x':   '(-webkit-device-pixel-ratio: 3), (moz-device-pixel-ratio: 3), (device-pixel-ratio: 3), (-ms-device-pixel-ratio: 3), (resolution: 3dppx), (min-resolution: 350dpi), (min-resolution: 3dppx)'
+        'retina1x':   '(-webkit-device-pixel-ratio: 1), (moz-device-pixel-ratio: 1), (device-pixel-ratio: 1), (-ms-min-device-pixel-ratio: 1), (resolution: 1dppx)',
+        'retina2x':   '(-webkit-device-pixel-ratio: 2), (moz-device-pixel-ratio: 2), (device-pixel-ratio: 2), (-ms-min-device-pixel-ratio: 2), (resolution: 2dppx), (min-resolution: 192dpi), (min-resolution: 2dppx)',
+        'retina3x':   '(-webkit-device-pixel-ratio: 3), (moz-device-pixel-ratio: 3), (device-pixel-ratio: 3), (-ms-min-device-pixel-ratio: 3), (resolution: 3dppx), (min-resolution: 350dpi), (min-resolution: 3dppx)'
 ) !default;
