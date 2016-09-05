@@ -7,9 +7,13 @@ footer {
   font-family: "Gotham Book";
   padding: $navbar-height / 2;
   display: flex;
+  display: -webkit-flex;
   justify-content: center;
+  -webkit-justify-content: center;
   align-items: center;
+  -webkit-align-items: center;
   flex-direction: row;
+  -webkit-flex-direction: row;
   position: relative;
 
   br {
@@ -18,6 +22,7 @@ footer {
 
   @include if-mobile {
     justify-content: space-between;
+    -webkit-justify-content: space-between;
     br {
       display: inline-block;
     }
@@ -79,7 +84,9 @@ footer {
     width: 1.2em;
     height: 1.2em;
     display: flex;
+    display: -webkit-flex;
     justify-content: center;
+    -webkit-justify-content: center;
     font-size: 1.5em;
   }
 

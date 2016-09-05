@@ -69,9 +69,13 @@
     &.carousel__body--green-man-grants {
       @include background('gmg.jpg');
       display: flex;
+      display: -webkit-flex;
       flex-direction: column;
+      -webkit-flex-direction: column;
       justify-content: center;
+      -webkit-justify-content: center;
       align-items: center;
+      -webkit-align-items: center;
 
       img {
         width: 35%;

@@ -2,6 +2,7 @@
 
 %info-section {
   display: flex;
+  display: -webkit-flex;
   background: black;
 
   h2 {
@@ -18,10 +19,12 @@
 
   @include if-tablet-and-smaller {
     flex-direction: column;
+    -webkit-flex-direction: column;
   }
 
   @include if-landscape {
     flex-direction: row;
+    -webkit-flex-direction: row;
   }
 
   .background {
@@ -43,6 +46,7 @@
     width: 50vw;
     padding: 4em;
     align-self: center;
+    -webkit-align-self: center;
 
     a {
       margin: 0 auto;
@@ -61,8 +65,11 @@
       order: 2;
 
       display: flex;
+      display: -webkit-flex;
       justify-content: center;
+      -webkit-justify-content: center;
       flex-direction: column;
+      -webkit-flex-direction: column;
     }
 
     @include if-landscape {

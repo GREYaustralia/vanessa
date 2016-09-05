@@ -3,14 +3,19 @@
 .about {
   @include background('mantra.jpg');
   display: flex;
+  display: -webkit-flex;
   justify-content: flex-end;
+  -webkit-justify-content: flex-end;
   align-items: center;
+  -webkit-align-items: center;
   position: relative;
   padding: 0 2em 2em 2em;
 
   @include if-tablet-and-smaller {
     justify-content: space-around;
+    -webkit-justify-content: space-around;
     flex-direction: column;
+    -webkit-flex-direction: column;
     // background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url(../img/mantra.jpg) center center;
     @include background-opacity('mantra.jpg', 0.5);
   }

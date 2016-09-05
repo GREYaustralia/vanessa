@@ -4,12 +4,16 @@
   @include full-height(1);
   background: $text-dark;
   display: flex;
+  display: -webkit-flex;
   flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
   justify-content: center;
+  -webkit-justify-content: center;
   overflow: hidden;
 
   @include if-mobile {
     flex-direction: column;
+    -webkit-flex-direction: column;
   }
 
   .tile {

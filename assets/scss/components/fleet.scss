@@ -4,6 +4,7 @@
   background: url($img-base-path + "fleet.jpg") center bottom;
   background-size: cover;
   display: flex;
+  display: -webkit-flex;
   position: relative;
   overflow: hidden;
 
@@ -35,9 +36,12 @@
 
   .vehicles {
     display: flex;
+    display: -webkit-flex;
     align-items: flex-end;
+    -webkit-align-items: flex-end;
     width: 100%;
     justify-content: center;
+    -webkit-justify-content: center;
     position: absolute;
     bottom:0;
 
@@ -110,7 +114,9 @@
     @include if-tablet-and-smaller {
       @include full-height(1);
       display: flex;
+      display: -webkit-flex;
       align-items: center;
+      -webkit-align-items: center;
     }
 
     h2 {
@@ -155,17 +161,22 @@
 
     .vehicles__gallery__body {
       display: flex;
+      display: -webkit-flex;
       flex-direction: column;
+      -webkit-flex-direction: column;
       justify-content: space-around;
+      -webkit-justify-content: space-around;
       outline: none;
 
       @include if-landscape {
         flex-direction: row;
+        -webkit-flex-direction: row;
       }
 
       .specifications {
         padding: 4em 2em;
         align-self: center;
+        -webkit-align-self: center;
 
         @include if-landscape {
           width: 50vw;
@@ -223,6 +234,7 @@
         img {
           width: 90%;
           align-self: center;
+          -webkit-align-self: center;
         }
       }
     }
