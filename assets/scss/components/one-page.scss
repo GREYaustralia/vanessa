@@ -4,12 +4,15 @@
   @include full-height-with-footer();
   background: black;
   display: flex;
+  display: -webkit-flex;
   flex-direction: row;
+  -webkit-flex-direction: row;
   padding: 3em;
   overflow-y: auto;
 
   @include if-tablet-and-smaller {
     flex-direction: column;
+    -webkit-flex-direction: column;
   }
 
   form {

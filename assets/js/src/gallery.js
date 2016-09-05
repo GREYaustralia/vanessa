@@ -34,12 +34,35 @@ $(document).ready(function () {
     });
 
     // Vehicles gallery
-    $('.vehicles__gallery').slick({
-        centerMode: false,
+        // $('.vehicles__gallery').slick({
+        //     centerMode: false,
+        //     infinite: true,
+        //     slidesToShow: 1,
+        //     slidesToScroll: 1,
+        //     prevArrow: '<button class="vehicles__gallery__navigation vehicles__gallery__navigation--prev" title="Last Vehicle"><i class="fa fa-angle-left"></i></button>',
+        //     nextArrow: '<button class="vehicles__gallery__navigation vehicles__gallery__navigation--next" title="Next Vehicle"><i class="fa fa-angle-right"></i></button>',
+        // });
+
+
+  function carosel(){
+    if ($(window).width() < 800 ) {
+      $('.fleet-main').find('text-box').hide();
+      $('.fleet-main').find('vehicles').hide();
+      $('.vehicles__gallery').show();
+      $('.vehicles__gallery').not('.slick-initialized').slick({
+        dots: true,
         infinite: true,
+        draggable: true,
+        speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1,
-        prevArrow: '<button class="vehicles__gallery__navigation vehicles__gallery__navigation--prev" title="Last Vehicle"><i class="fa fa-angle-left"></i></button>',
-        nextArrow: '<button class="vehicles__gallery__navigation vehicles__gallery__navigation--next" title="Next Vehicle"><i class="fa fa-angle-right"></i></button>',
-    });
+        slidesToScroll: 1
+      });
+    }else{
+      $('.fleet-main').find('text-box').show();
+      $('.fleet-main').find('vehicles').show();
+      $('.vehicles__gallery').hide();
+    }
+  };
+  carosel();
+
 });

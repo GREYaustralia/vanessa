@@ -1,4 +1,4 @@
-$(document).ready(function () {
+    $(document).ready(function () {
     var video = document.getElementById('crowd');
 
     $('.carousel').flexslider({
@@ -7,8 +7,8 @@ $(document).ready(function () {
         animationLoop: true,
         controlNav: false,
         directionNav: true,
-        prevText: "",
-        nextText: "",
+        prevText: '',
+        nextText: '',
         slideshow: false,
         slideshowSpeed: 3500,
         smoothHeight: true,

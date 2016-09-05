@@ -29,7 +29,7 @@
 
   .gallery {
     position: relative;
-    padding: 4em 0 3em;
+    padding: 0 3em;
     @include if-mobile {
       padding: 0;
     }
@@ -71,7 +71,11 @@
       }
       .text{
         height: 17vh;
+        min-height: 116px;
         text-align:center;
+        @include if-tablet-and-smaller {
+          min-height: 80px;
+        }
         @include if-large-desktop {
 
         }
@@ -80,10 +84,8 @@
           padding: 0.5em 1em 0 1em;
           font-family: 'Helvetica';
           text-transform: uppercase;
-          // text-align: center;
           font-weight: normal;
           text-shadow:none;
-        // color:$text-light;
         }
         p {
           font-size: 1em;

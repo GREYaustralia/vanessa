@@ -40,6 +40,22 @@
     color: white;
     margin-left: 2.5em;
   }
+  .coburg-terms{
+    ol{
+      padding-bottom: 1em;
+    }
+  }
+  .sub-list{
+    ol{
+      padding-bottom:0;
+    }
+    ol:last-child{
+      padding-bottom:1em;
+    }
+    li{
+      padding:1em;
+    }
+  }
 
   a {
     color: white;

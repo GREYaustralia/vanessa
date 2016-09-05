@@ -101,13 +101,20 @@
   .blog__navigation {
     position: absolute;
     color: $text-light;
-    top: 60%;
+    top: 61%;
     transform: translateY(-50%);
     font-size: 3em;
     z-index: 1;
+    height: 78%;
+    width: 1em;
 
     &.blog__navigation--prev {
       left: 0em;
+      text-align: left;
+      &:hover{
+        // background:-webkit-linear-gradient(left, red , yellow);
+        background:linear-gradient(to right, $text-dark , transparent);
+      }
 
       @include if-landscape {
         left: 0;
@@ -116,6 +123,11 @@
 
     &.blog__navigation--next {
       right: 0em;
+      text-align: right;
+      &:hover{
+        // background:-webkit-linear-gradient(left, red , yellow);
+        background:linear-gradient(to left, $text-dark , transparent);
+      }
 
       @include if-landscape {
         right: 0;

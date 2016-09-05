@@ -5,6 +5,7 @@
   background-size: cover;
   padding: $navbar-height $navbar-height * 2;
   display: flex;
+  display: -webkit-flex;
 
   @include if-tablet-and-smaller {
     @include background-opacity('internship.jpg', 0.5);
@@ -35,11 +36,13 @@
     width: 30vw;
     text-align: left;
     align-self: flex-start;
+    -webkit-align-self: flex-start;
 
     @include if-tablet-and-smaller {
       width: 100%;
       text-align: center;
       align-self: center;
+      -webkit-align-self: center;
     }
   }
 
