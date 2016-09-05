@@ -43,6 +43,9 @@ footer {
       left: auto;
       top: auto;
     }
+    @include if-mobile {
+      display: none;
+    }
   }
 
   .links {
@@ -76,7 +79,7 @@ footer {
     }
 
     @include if-mobile {
-      font-size: .6em;
+      font-size: .7em;
     }
   }
 
