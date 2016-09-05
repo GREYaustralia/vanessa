@@ -64,9 +64,9 @@ html, body {
     font-size: 10px;
   }
 
-  @include if-ie {
-    font-size: 14px;
-  }
+  // @include if-ie {
+  //   font-size: 14px;
+  // }
 }
 
 body {
