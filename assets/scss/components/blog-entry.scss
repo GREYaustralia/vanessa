@@ -10,6 +10,12 @@
   }
 
   .blog__content{
+    padding-bottom: 2em;
+    border-bottom: 1px solid $text-grey;
+    .feature-image{
+      width:100%;
+      object-fit: cover;
+    }
     h1 {
       font-family: "Bushcraft Textured";
       line-height: 1.2em;
@@ -17,6 +23,22 @@
       padding: 1em 1em 0 1em;
       font-size: 3em;
       cursor: pointer;
+    }
+    h2 {
+      font-family: "Bushcraft Textured";
+      line-height: 1em;
+      color: $text-dark;
+      padding: 1em 1em 0 1em;
+      font-size: 2em;
+      cursor: pointer;
+    }
+    h3 {
+      font-size: 0.9em;
+      padding: 0.5em 1em 0 1em;
+      font-family: 'Helvetica';
+      text-transform: uppercase;
+      font-weight: normal;
+      text-shadow:none;
     }
 
     p{
@@ -29,15 +51,28 @@
         padding: 0 1.2em;
         text-align: center;
     }
-    img{
-      width:100%;
-      object-fit: cover;
+
+    table, th, td {
+      border:1px solid $text-grey;
+    }
+    table {
+      margin-bottom: 1em;
+      margin-top:1em;
+      width: 100%;
+    }
+    a{
+      color: black;
+      text-decoration: underline;
+      &:hover {
+        color: $text-orange;
+      }
     }
   }
 }
 
 
 .blog__section{
+  margin-top:2em;
   width:60vw;
   overflow: hidden;
   @include if-mobile {
