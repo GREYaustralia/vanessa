@@ -1,6 +1,6 @@
 @import 'modules';
 
-#who-is-vanessa {
+.who-is-vanessa {
   @extend %info-section;
 
   .background {
@@ -9,7 +9,7 @@
   }
 }
 
-#where-does-she-go {
+.where-does-she-go {
   @extend %info-section;
 
   .background {
@@ -17,7 +17,7 @@
   }
 }
 
-#events {
+.events {
   @extend %info-section;
   @include full-height-with-footer;
 

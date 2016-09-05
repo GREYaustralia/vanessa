@@ -1,6 +1,6 @@
 @import 'modules';
 
-#social {
+.social {
   @include full-height(1);
   background: $text-dark;
   display: flex;

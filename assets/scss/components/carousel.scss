@@ -44,20 +44,7 @@
         transform: translate(-50%, -50%);
       }
 
-      // button {
-      //   position: absolute;
-      //   bottom: 4em;
-      //   left: 50%;
-      //   transform: translate(-50%, 0);
-      //   z-index: 1;
-      //   @include button(1.4em);
 
-      //   @include if-mobile {
-      //     bottom: 50%;
-      //     transform: translate(-50%, 50%);
-      //     @include button(1.8em);
-      //   }
-      // }
 
       .element__toggle{
         font-family: 'FontAwesome' ;
@@ -69,7 +56,9 @@
         bottom:.5em;
         border:none;
         cursor: pointer;
-        // content: "New text";
+        @include if-tablet-and-smaller {
+          display: none;
+        }
       }
       .playing{
 
@@ -118,6 +107,11 @@
         }
       }
     }
+  }
+}
+.carousel__slides {
+  li {
+    cursor: pointer;
   }
 }
 

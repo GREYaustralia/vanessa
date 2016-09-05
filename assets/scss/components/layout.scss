@@ -33,6 +33,9 @@ html, body {
   font-size: 10px;
   overflow: hidden;
 
+  @include if-mobile {
+    font-size: 10px;
+  }
   @include if-mobile(3x) {
     font-size: 12px;
   }
@@ -247,6 +250,9 @@ p {
     background: white;
     border-radius: 100%;
     display: flex;
+    &:hover{
+      background-color: $text-orange;
+    }
 
     a {
       color: $text-dark;

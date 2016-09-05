@@ -35,9 +35,13 @@ nav {
       display: flex;
       justify-content: center;
       align-items: center;
+      &:hover{
+        background-color: $text-orange;
+      }
 
       a {
         color: $text-dark;
+
       }
       &:first-child {
         margin-right: 1.5em;
@@ -95,6 +99,21 @@ nav {
       -o-transition: width .5s ease;
       -ms-transition: width .5s ease;
       transition: width .5s ease;
+      &:placeholder{
+        color:$text-grey
+      }
+      &::-webkit-input-placeholder {
+        color:$text-grey;
+      }
+      &:-ms-input-placeholder {
+        color: $text-grey;
+      }
+      &::-moz-placeholder {
+        color: $text-grey;
+      }
+      &:-moz-placeholder {
+        color: $text-grey;
+      }
     }
   }
 }
@@ -204,6 +223,7 @@ ul.menu {
 
     &:hover, &:active, &:focus, &.active {
       background: #ff4c00;
+      // outline-color: $text-red;
     }
 
     &.bottom {
@@ -225,6 +245,9 @@ ul.menu {
       color: $text-dark;
       padding: 0.75em 0;
       display: block;
+      &:focus {
+        outline-color: $text-red;
+      }
     }
   }
 }

@@ -1,6 +1,6 @@
 @import 'modules';
 
-#about {
+.about {
   @include background('mantra.jpg');
   display: flex;
   justify-content: flex-end;

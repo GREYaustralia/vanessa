@@ -1,6 +1,6 @@
 @import 'modules';
 
-#blog {
+.blog {
   @include full-height-with-footer;
   padding: 5em;
   overflow: auto;
@@ -23,19 +23,13 @@
   }
   .btn{
     position: relative;
-    // top: 5em;
-    @include if-tablet-and-smaller{
-      top:8em;
-    }
+    top: 1em;
   }
 
 
   .gallery {
     position: relative;
-    padding: 0 3em;
-    top:15%;
-    height:60vh;
-
+    padding: 4em 0 3em;
     @include if-mobile {
       padding: 0;
     }
@@ -58,11 +52,6 @@
       @include if-mobile {
         margin: 0;
       }
-      @include if-landscape {
-        @include square(1);
-        display: flex;
-        margin: 0;
-      }
       @include if-large-desktop {
         padding: 0;
         top:0;
@@ -77,8 +66,7 @@
         width: 100%;
         object-fit: cover;
         @include if-landscape {
-          width: auto;
-          height: 100%;
+
         }
       }
       .text{
