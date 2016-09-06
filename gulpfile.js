@@ -5,17 +5,20 @@ var autoprefixer = require('gulp-autoprefixer');
 var notify = require("gulp-notify");
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
+var order = require("gulp-order")
 
 var assets = 'assets';
 
 var src = {
     scss: assets + '/scss',
     js: assets + '/js/src',
+    components: assets + '/js/components',
 }
 
 var dist = {
     css: assets + '/css',
     js: assets + '/js',
+    components: assets + '/js',
 }
 
 gulp.task('css', function () {
@@ -47,9 +50,33 @@ gulp.task('js', function () {
         }));
 });
 
+gulp.task('components', function(){
+    return gulp.src(src.components + '/*.js')
+        .on('error', notify.onError({
+            message: '<%= error.message %>'
+        }))
+        .pipe(order([
+            "jquery.min.js",
+            "jquery.fracs.min.js",
+            "flex-slider.min.js",
+            "slick.min.js",
+            "jquery-validation.min.js"
+            ]))
+        .pipe(concat('components.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest(dist.js))
+        .pipe(notify({
+            title: 'Gulp',
+            message: '<%= file.relative %> was updated',
+        }));
+
+});
+
+
 gulp.task('watch', function () {
     gulp.watch(src.scss + '/**/*.scss', ['css']);
     gulp.watch(src.js + '/*.js', ['js']);
+    gulp.watch(src.js + '/  *.js', ['components']);
 });
 
-gulp.task('default', ['css', 'js', 'watch']);
+gulp.task('default', ['css', 'js', 'components', 'watch']);

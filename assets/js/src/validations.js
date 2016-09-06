@@ -28,11 +28,11 @@
         email: "Please enter a valid email address",
         message: "You Need to write something!"
       },
-      submitHandler: function(form) {
-        if($('form').attr('id') == 'contact-us'){
-          form.submit();
-        }
-      }
+      // submitHandler: function(form) {
+      //   // if($('form').attr('id') == 'contact-us'){
+      //     form.submit();
+      //   // }
+      // }
     }
   );
 // }

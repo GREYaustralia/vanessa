@@ -18,9 +18,7 @@ function anchorScrollUp(navButton, sections) {
     var secondSection = sections[1];
 
     if (topOfPage()) {
-        navButtonUp.attr('href', '#')
         navButton.fadeOut();
-
     }
 
     if ($(secondSection).offset().top - $navbar.clientHeight <= 0) {
@@ -70,6 +68,8 @@ function calculateNavButtons(sections) {
 
             navButtonUp.attr('href', '#' + prevId);
             navButtonDown.attr('href', '#' + nextId);
+        }else if(topOfPage()){
+            $('.nav-btn--up').attr('href', '#hero')
         }
     });
 }
