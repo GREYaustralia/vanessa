@@ -5,6 +5,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var notify = require("gulp-notify");
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
+var order = require("gulp-order")
 
 var assets = 'assets';
 
@@ -36,7 +37,6 @@ gulp.task('css', function () {
 });
 
 gulp.task('js', function () {
-    console.log('running')
     return gulp.src(src.js + '/*.js')
         .on('error', notify.onError({
             message: '<%= error.message %>'
@@ -51,13 +51,17 @@ gulp.task('js', function () {
 });
 
 gulp.task('components', function(){
-    console.log('running2')
-    console.log('components')
-    console.log(src.components)
     return gulp.src(src.components + '/*.js')
         .on('error', notify.onError({
             message: '<%= error.message %>'
         }))
+        .pipe(order([
+            "jquery.min.js",
+            "jquery.fracs.min.js",
+            "flex-slider.min.js",
+            "slick.min.js",
+            "jquery-validation.min.js"
+            ]))
         .pipe(concat('components.js'))
         .pipe(uglify())
         .pipe(gulp.dest(dist.js))
