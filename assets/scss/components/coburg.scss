@@ -36,25 +36,22 @@
     line-height: 1.5em;
   }
 
-  ul {
+  ol {
     color: white;
     margin-left: 2.5em;
   }
   .coburg-terms{
-    ol{
+
+    li{
       padding-bottom: 1em;
     }
   }
   .sub-list{
-    ol{
+    list-style: lower-alpha;
+    li{
       padding-bottom:0;
     }
-    ol:last-child{
-      padding-bottom:1em;
-    }
-    li{
-      padding:1em;
-    }
+
   }
 
   a {
