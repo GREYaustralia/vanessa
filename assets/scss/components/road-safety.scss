@@ -45,7 +45,7 @@
       cursor: pointer;
     }
 
-    &:hover {
+    &:hover, &:active, &:focus {
       p {
         display: inline-block;
         width: 100%;

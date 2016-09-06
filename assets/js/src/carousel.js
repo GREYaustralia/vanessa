@@ -21,6 +21,8 @@
         },
         after: function (index) {},
     });
+    $('.flex-prev').attr('tabindex','-1')
+    $('.flex-next').attr('tabindex','-1')
 
 
     // var mediaPlayer = $('#crowd');

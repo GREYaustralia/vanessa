@@ -3,16 +3,6 @@ var $navbar = document.querySelector('nav');
 
 // Get scroll position from session storage
 $body.scrollTop(sessionStorage.scrollPos || 0);
-// navButtonUp.attr('href', '#')
-
-
-/*
- var init = function () {
- $body.scrollTop(sessionStorage.scrollPos || 0);
- };
-
- window.onload = init;
- */
 
 function anchorScrollUp(navButton, sections) {
     var secondSection = sections[1];
@@ -56,8 +46,6 @@ function calculateNavButtons(sections) {
     var navButtonDown = $('.nav-btn--down');
 
     $(sections).each(function (index, element) {
-        console.log(index + ': ' + element)
-        // console.log($(element).fracs())
         var fractions = $(element).fracs();
         if (fractions.visible === 1) {
             var prevElement = $(element).prev();

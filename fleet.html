@@ -12,7 +12,11 @@
     <link rel="stylesheet" href="assets/css/app.css">
 </head>
 <body>
-
+<ol class='sr-hidden'>
+    <li><a href='#nav'>Skip to Navigation</a></li>
+    <li><a href='#bus'>Skip to Content</a></li>
+    <li><a href='#footer'>Skip to Footer</a></li>
+</ol>
 <nav>
     <a href="index.html#fleet" class="back-button"><i class="fa fa-angle-left"></i></a>
     <a href="index.html" class="brand"><img src="assets/img/logo.png" alt="Vanessa"></a>
@@ -46,11 +50,11 @@
 </nav>
 
 <a href="#bus" class="btn btn--back-to-top btn--white">Back to the top</a>
-<a href="#bus" class="nav-btn nav-btn--up"><i class="fa fa-angle-up"></i></a>
-<a href="#car" class="nav-btn nav-btn--down"><i class="fa fa-angle-down"></i></a>
+<a href="#bus" class="nav-btn nav-btn--up" tabindex="-1"><i class="fa fa-angle-up"></i></a>
+<a href="#car" class="nav-btn nav-btn--down" tabindex="-1"><i class="fa fa-angle-down"></i></a>
 
 <main>
-    <section id="bus" class="bus-page">
+    <section id="bus" class="bus-page" tabindex="0">
         <div class="text-box">
             <h2>The Mothership</h2>
             <p class="hide-if-landscape">If you’re looking for a big bus with a sweet roof deck that’s covered in Oslo Davis drawings, look no
@@ -79,7 +83,7 @@
         <div class="background"></div>
     </section>
 
-    <section id="car" class='car-page'>
+    <section id="car" class='car-page' tabindex="0">
         <div class="background"></div>
         <div class="text-box">
             <h2>The Muscle</h2>
@@ -101,7 +105,7 @@
         </div>
     </section>
 
-    <section id="van" class="van-page">
+    <section id="van" class="van-page" tabindex="0">
         <div class="text-box">
             <h2>The Minivan</h2>
             <p><span class="hide-if-landscape"><strong>Mini V</strong> is what you get when you put Big V through the dryer. Being small, <strong>Mini V</strong> can make it to all those festivals and Open Days that Big V’s trunk is just too large for.</span>
@@ -122,7 +126,7 @@
     </section>
 
     <footer>
-        <a href="index.html" class="brand">
+        <a href="index.html" name="footer" class="brand">
             <img src="assets/img/logo.png" alt="Vanessa">
         </a>
         <ul class="links">

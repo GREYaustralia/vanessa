@@ -12,7 +12,11 @@
     <link rel="stylesheet" href="assets/css/app.css">
 </head>
 <body>
-
+<ol class='sr-hidden'>
+    <li><a href='#nav'>Skip to Navigation</a></li>
+    <li><a href='#coburg'>Skip to Content</a></li>
+    <li><a href='#footer'>Skip to Footer</a></li>
+</ol>
 <nav>
     <a href="terms-and-conditions.html" class="back-button"><i class="fa fa-angle-left"></i></a>
     <a href="index.html" class="brand"><img src="assets/img/logo.png" alt="Vanessa"></a>
@@ -48,7 +52,7 @@
 <main>
     <a href="#coburg" class="btn btn--back-to-top btn--white">Back to the top</a>
 
-    <section id="coburg" class="coburg">
+    <section id="coburg" class="coburg" tabindex="0">
         <h1><strong>Coburg Drive-In Competition&nbsp;</strong></h1>
         <h2><strong>TERMS &amp; CONDITIONS &nbsp;</strong></h2>
         <p>By entering this competition, you accept these terms and conditions.</p>
@@ -222,7 +226,7 @@
     </section>
 
     <footer>
-        <a href="index.html" class="brand">
+        <a href="index.html" name="footer" class="brand">
             <img src="assets/img/logo.png" alt="Vanessa">
         </a>
         <ul class="links">
