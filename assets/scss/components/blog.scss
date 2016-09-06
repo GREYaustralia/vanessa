@@ -107,6 +107,9 @@
           text-decoration: underline;
           // text-align: center;
           text-transform: uppercase;
+          &:hover, &:focus {
+            color:$text-orange;
+          }
         }
       }
     }
@@ -118,6 +121,9 @@
       transform: translateY(-50%);
       font-size: 3em;
       z-index: 1;
+      &:hover, &:focus {
+        color:$text-orange;
+      }
 
       &.gallery__navigation--prev {
         left: -1em;

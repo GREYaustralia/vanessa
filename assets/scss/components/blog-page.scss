@@ -2,6 +2,7 @@
 
 .blog-page{
   @include full-height-with-footer;
+  overflow:hidden;
 
   .blog__hero{
     img{
@@ -11,41 +12,43 @@
       object-fit: cover;
     }
   }
+  .hero__text{
+    width:100%;
+    .text{
+      padding: 1em 0;
+      background-color: $text-dark;
+      position: relative;
+      bottom:0;
+      text-align: center;
+
+
+      h3 {
+        font-size: 1.1em;
+        font-family: 'Helvetica';
+        color: $text-light;
+        text-transform: uppercase;
+        font-weight: normal;
+        text-shadow:none;
+      }
+
+      p {
+        font-size: 1em;
+        font-family: 'Helvetica';
+        font-weight: lighter;
+        color: $text-light;
+        text-shadow:none;
+        text-align: center;
+        margin:0 auto;
+      }
+    }
+  }
   .blog__list{
     bottom:3em;
     position: fixed;
         // min-height: 275px;
     background-color: white;
     width:100%;
-    .hero__text{
-      .text{
-        padding: 1em 0;
-        background-color: $text-dark;
-        position: relative;
-        bottom:0;
-        text-align: center;
 
-
-        h3 {
-          font-size: 1.1em;
-          font-family: 'Helvetica';
-          color: $text-light;
-          text-transform: uppercase;
-          font-weight: normal;
-          text-shadow:none;
-        }
-
-        p {
-          font-size: 1em;
-          font-family: 'Helvetica';
-          font-weight: lighter;
-          color: $text-light;
-          text-shadow:none;
-          text-align: center;
-          margin:0 auto;
-        }
-      }
-    }
     .blog__gallery{
       @include if-mobile {
         padding: 0;
@@ -67,6 +70,13 @@
           width: 100%;
           object-fit: cover;
           height: 70%;
+          &:hover, &:focus {
+            .text{
+              a{
+                color:$text-orange;
+              }
+            }
+          }
         }
         .text{
           border-right:1px solid $text-light;
@@ -78,6 +88,9 @@
             text-transform: uppercase;
             font-weight: normal;
             text-shadow:none;
+            @include if-large-desktop {
+              font-size: 1.2em
+            }
           }
           p {
             font-size: 0.8em;
@@ -87,12 +100,21 @@
             padding: 0 1.2em;
             text-shadow:none;
             text-align: center;
+            @include if-large-desktop {
+              font-size: 1em
+            }
           }
           a {
             font-size: 0.8em;
             text-transform: uppercase;
             color: #767676;
             text-decoration: underline;
+            &:hover, &:focus {
+              color:$text-orange;
+            }
+            @include if-large-desktop {
+              font-size: 1em
+            }
           }
         }
       }
@@ -101,18 +123,18 @@
   .blog__navigation {
     position: absolute;
     color: $text-light;
-    top: 61%;
+    top: 5em;
+    // bottom: 3em;
     transform: translateY(-50%);
     font-size: 3em;
     z-index: 1;
-    height: 78%;
+    height: 100%;
     width: 1em;
 
     &.blog__navigation--prev {
       left: 0em;
       text-align: left;
-      &:hover{
-        // background:-webkit-linear-gradient(left, red , yellow);
+      &:hover, &:focus, &:active{
         background:linear-gradient(to right, $text-dark , transparent);
       }
 
@@ -124,9 +146,11 @@
     &.blog__navigation--next {
       right: 0em;
       text-align: right;
-      &:hover{
-        // background:-webkit-linear-gradient(left, red , yellow);
+      &:hover, &:focus, &:active{
         background:linear-gradient(to left, $text-dark , transparent);
+      }
+      &:focus {
+        outline:none;
       }
 
       @include if-landscape {
