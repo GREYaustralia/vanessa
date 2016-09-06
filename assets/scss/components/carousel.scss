@@ -59,11 +59,11 @@
         @include if-tablet-and-smaller {
           display: none;
         }
+        &:hover, &:focus {
+          color:white;
+          opacity: 0.8em;
+        }
       }
-      .playing{
-
-      }
-      .paused{}
     }
 
     &.carousel__body--green-man-grants {
@@ -155,6 +155,7 @@
       opacity: 0.75;
       transition: all 0.2s;
       color: white;
+      outline:0;
 
       &.dark {
         @include if-mobile {

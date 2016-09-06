@@ -12,7 +12,11 @@
     <link rel="stylesheet" href="assets/css/app.css">
 </head>
 <body>
-
+<ol class='sr-hidden'>
+    <li><a href='#nav'>Skip to Navigation</a></li>
+    <li><a href='#who-is-vanessa'>Skip to Content</a></li>
+    <li><a href='#footer'>Skip to Footer</a></li>
+</ol>
 <nav>
     <a href="index.html#about" class="back-button"><i class="fa fa-angle-left"></i></a>
     <a href="index.html" class="brand"><img src="assets/img/logo.png" alt="Vanessa"></a>
@@ -45,12 +49,12 @@
     </ul>
 </nav>
 
-<a href="#who-is-vanessa" class="nav-btn nav-btn--up"><i class="fa fa-angle-up"></i></a>
-<a href="#where-does-she-go" class="nav-btn nav-btn--down"><i class="fa fa-angle-down"></i></a>
+<a href="#who-is-vanessa" class="nav-btn nav-btn--up"><i class="fa fa-angle-up" tabindex="-1"></i></a>
+<a href="#where-does-she-go" class="nav-btn nav-btn--down"><i class="fa fa-angle-down" tabindex="-1"></i></a>
 <a href="#who-is-vanessa" class="btn btn--back-to-top btn--white">Back to the top</a>
 
 <main>
-    <section id="who-is-vanessa" class="who-is-vanessa">
+    <section id="who-is-vanessa" class="who-is-vanessa" tabindex="0">
         <div class="background"></div>
         <div class="text-box">
             <h2>Who Is Vanessa?</h2>
@@ -67,7 +71,7 @@
         </div>
     </section>
 
-    <section id="where-does-she-go" class="where-does-she-go">
+    <section id="where-does-she-go" class="where-does-she-go" tabindex="0">
         <div class="text-box">
             <h2>Where Does She Go?</h2>
 
@@ -83,7 +87,7 @@
         <div class="background"></div>
     </section>
 
-    <section id="events" class="events">
+    <section id="events" class="events" tabindex="0">
         <div class="background"></div>
         <div class="text-box">
             <h2>Events</h2>
@@ -97,7 +101,7 @@
     </section>
 
     <footer>
-        <a href="index.html" class="brand">
+        <a href="index.html" name="footer" class="brand">
             <img src="assets/img/logo.png" alt="Vanessa">
         </a>
         <ul class="links">

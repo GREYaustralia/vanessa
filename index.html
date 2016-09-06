@@ -14,8 +14,8 @@
 </head>
 <body>
   <ol class='sr-hidden'>
-    <li><a href='#main-nav'>Skip to Navigation</a></li>
-    <li><a href='#content'>Skip to Content</a></li>
+    <li><a href='#nav'>Skip to Navigation</a></li>
+    <li><a href='#about'>Skip to Content</a></li>
     <li><a href='#footer'>Skip to Footer</a></li>
   </ol>
 <nav>
@@ -32,6 +32,7 @@
         </form>
     </div>
     <button class="hamburger" title="navigation" tabindex="0">
+
         <span></span>
         <span></span>
         <span></span>
@@ -49,8 +50,8 @@
     </ul>
 </nav>
 
-<a href="#hero" class="nav-btn nav-btn--up" title="Previous Section"><i class="fa fa-angle-up"></i></a>
-<a href="#about" class="nav-btn nav-btn--down" title="Next Section"><i class="fa fa-angle-down"></i></a>
+<a href="#hero" class="nav-btn nav-btn--up" title="Previous Section" tabindex="-1"><i class="fa fa-angle-up"></i></a>
+<a href="#about" class="nav-btn nav-btn--down" title="Next Section" tabindex="-1"><i class="fa fa-angle-down"></i></a>
 <a href="#hero" class="btn btn--back-to-top btn--white" title="Back to top">Back to the top</a>
 
 <main class='main'>
@@ -64,7 +65,7 @@
     <section id="hero" class="hero active">
         <div class="carousel">
             <ul class="carousel__slides">
-                <li>
+                <li tabindex="0">
                     <div class="carousel__body carousel__body--video">
                         <img src="assets/img/logo-full.png" alt="Vanessa Header Background" description="Screen Grab of a crowd dancing at a festival">
                         <video autoplay loop muted id="crowd" poster="assets/img/crowd.jpg">
@@ -74,7 +75,7 @@
                         <button class='element__toggle'>&#xf04c</button>
                     </div>
                 </li>
-                <li>
+                <li tabindex="0">
                     <div class="carousel__body carousel__body--green-man-grants">
                         <img src="assets/img/gmg_logo.png" alt='Green Man Grants Logo'>
                         <p>Make the roads safer and you could get the green light for up to $50,000 funding plus a bonus
@@ -86,7 +87,7 @@
         </div>
     </section>
 
-    <section id="about" class="about">
+    <section id="about" class="about" tabindex="0" >
         <div class="text-box">
             <p>Welcome to the zero generation.
                 Grew up in the zeros. Drink zeros. Have zero dollars.
@@ -100,7 +101,7 @@
         </div>
     </section>
 
-    <section id="road-safety" class="road-safety">
+    <section id="road-safety" class="road-safety" tabindex="0">
         <a href="road-safety.html">
             <div id="drink-driving" class="drink-driving">
                 <h3>Drink Driving</h3>
@@ -109,7 +110,7 @@
             </div>
         </a>
         <a href="road-safety.html">
-            <div id="drug-driving" class="drug-driving">
+            <div id="drug-driving" class="drug-driving" tabindex="0">
                 <h3>Drug Driving</h3>
                 <p>If you’re taking anything stronger than a Panadol there’s a good chance it’s going to affect your
                     driving ability – especially if said drug isn’t exactly legal – so it’s a good idea to avoid mixing
@@ -117,28 +118,28 @@
             </div>
         </a>
         <a href="road-safety.html">
-            <div id="distractions" class="distractions">
+            <div id="distractions" class="distractions" tabindex="0">
                 <h3>Distractions</h3>
                 <p>It doesn’t matter how good the latest Snapchat filter is, it can wait until you’re out of the car.
                     Would you really want your last words to be the smiling poo emoji?</p>
             </div>
         </a>
         <a href="road-safety.html">
-            <div id="drowsy-driving" class="distractions">
+            <div id="drowsy-driving" class="distractions" tabindex="0">
                 <h3>Tired Driving</h3>
                 <p>One minute you’re driving, the next you’re sitting your high school exams in your underwear, and
                     that’s not even the worst part – fatigue can be fatal in the blink of an eye.</p>
             </div>
         </a>
         <a href="road-safety.html">
-            <div id="prepare-to-party" class="prepare-to-party">
+            <div id="prepare-to-party" class="prepare-to-party" tabindex="0">
                 <h3>Prepare to Party</h3>
                 <p>The Beastie Boys fought tooth and nail for your right to party, so make it count, plan ahead. Nothing
                     spoils a good night like getting stranded without a lift.</p>
             </div>
         </a>
         <a href="road-safety.html">
-            <div id="vehicle-safety" class="vehicle-safety">
+            <div id="vehicle-safety" class="vehicle-safety" tabindex="0">
                 <h3>Vehicle Safety</h3>
                 <p>You don’t need a boxy 90’s Volvo to be safe these days. Safe cars come in a variety of colours, sizes
                     and best of all, the ability to fit even the thriftiest of budgets.</p>
@@ -146,7 +147,7 @@
         </a>
     </section>
 
-    <section id="fleet" class="fleet">
+    <section id="fleet" class="fleet" tabindex="0">
         <!-- <img src='assets/img/fleet.jpg'> -->
         <div class='fleet-main'>
             <div class="text-box">
@@ -217,7 +218,7 @@
         </div>
     </section>
 
-    <section id="internship" class="internship">
+    <section id="internship" class="internship" tabindex="0">
         <div class="text-box">
             <h3 class="text-red">Vanessa Internships</h3>
             <p class="text-red">Want a chance to land your dream job, heading to some of the biggest music festivals
@@ -232,7 +233,7 @@
         </div>
     </section>
 
-    <section id="hsiyfc" class="hsiyfc">
+    <section id="hsiyfc" class="hsiyfc" tabindex="0">
         <div class="text-box">
             <p>Most of us wouldn’t know a safe car from a potato. Luckily the Internet is here to help. Select your
                 budget and search through a smorgasbord of safe cars with whatever cash you’ve got.</p>
@@ -245,7 +246,7 @@
         </div>
     </section>
 
-    <section id="social" class="social">
+    <section id="social" class="social" tabindex="0">
         <div class="tile">
             <a href="https://www.instagram.com/vanessabus/" target="_blank" data-clicked="0">
                 <img src="assets/img/vanessa-1.png" alt="Instagram Photo">
@@ -297,7 +298,7 @@
         </div>
     </section>
 
-    <section id="blog" class="blog">
+    <section id="blog" class="blog" tabindex="0">
         <div class="gallery">
             <div class="gallery__slide">
                 <div class="gallery__body">
@@ -364,8 +365,8 @@
         <a href="blog-page.html" class="btn btn--orange">See More Posts</a>
     </section>
 
-    <footer>
-        <a href="index.html" class="brand">
+    <footer >
+        <a href="index.html" name='footer' class="brand">
             <img src="assets/img/logo.png" alt="Vanessa">
         </a>
         <ul class="links">
