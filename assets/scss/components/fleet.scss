@@ -56,6 +56,13 @@
       transform: scale(2);
       bottom:22vh
     }
+    @include media-context(('4k': 3839px)){
+      .bus {
+        @include media('>=4k') {
+          transform:scale(3)
+        }
+      }
+    }
 
 
     .van, .bus, .car {

@@ -60,7 +60,6 @@ gulp.task('components', function(){
             "jquery.fracs.min.js",
             "flex-slider.min.js",
             "slick.min.js",
-            "jquery-validation.min.js"
             ]))
         .pipe(concat('components.js'))
         .pipe(uglify())

@@ -57,11 +57,11 @@
 
       .blog__slide {
         @include if-landscape {
-          height:35vh;
+          height:38vh;
           display: inline-block;
           width:24%;
         }
-        height:35vh;
+        height:38vh;
         width:24%;
         display:inline-block;
       }
@@ -90,6 +90,7 @@
         .text{
           border-right:1px solid $text-light;
           background-color: white;
+          height: 30%;
           h3 {
             font-size: 0.9em;
             padding: 0.5em 1em 0 1em;

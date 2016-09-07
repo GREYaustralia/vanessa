@@ -34,11 +34,16 @@ $(document).ready(function () {
     });
 
 
+    $(window).on('resize', function(){
+      carosel();
+    })
+
   function carosel(){
-    if ($(window).width() < 800 ) {
-      $('.fleet-main').find('text-box').hide();
-      $('.fleet-main').find('vehicles').hide();
-      $('.vehicles__gallery').show();
+    console.log('wot')
+    // if ($(window).width() < 800 ) {
+      // $('.fleet-main').find('text-box').hide();
+      // $('.fleet-main').find('vehicles').hide();
+      // $('.vehicles__gallery').show();
       $('.vehicles__gallery').not('.slick-initialized').slick({
         dots: true,
         infinite: true,
@@ -47,12 +52,12 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1
       });
-    }else{
-      $('.fleet-main').find('text-box').show();
-      $('.fleet-main').find('vehicles').show();
-      $('.vehicles__gallery').hide();
-    }
+    // }else{
+    //   $('.fleet-main').find('text-box').show();
+    //   $('.fleet-main').find('vehicles').show();
+    //   $('.vehicles__gallery').hide();
+    // }
   };
-  carosel();
+  // carosel();
 
 });

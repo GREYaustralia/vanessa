@@ -1,6 +1,6 @@
   // if($('main').has('form')){
     $.validator.addMethod('phonenumber', function (value) {
-      return /^0[0-9]{9}/.test(value);
+      return /^0[0-9]{9}/.replace(/[^\d]/g, '').test(value);
     });
     $.validator.methods.email = function( value, element ) {
       return this.optional( element ) || /[a-z]+@[a-z]+\.[a-z]+/.test( value );
