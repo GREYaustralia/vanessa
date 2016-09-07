@@ -124,8 +124,7 @@
   .blog__navigation {
     position: absolute;
     color: $text-light;
-    top: 5em;
-    // bottom: 3em;
+    top: 50%;
     transform: translateY(-50%);
     font-size: 3em;
     z-index: 1;
