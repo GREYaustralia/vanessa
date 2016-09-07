@@ -70,14 +70,22 @@ function blogPageImage(){
 }
 
 function carosel(){
-    $('.vehicles__gallery').not('.slick-initialized').slick({
-        dots: false,
-        infinite: true,
-        draggable: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        prevArrow: '<button class="vehicles__gallery__navigation vehicles__gallery__navigation--prev" title="Last Entries"><i class="fa fa-angle-left"></i></button>',
-        nextArrow: '<button class="vehicles__gallery__navigation vehicles__gallery__navigation--next" title="Next Entries"><i class="fa fa-angle-right"></i></button>'
-    });
+    console.log('werk werk werk werk werk')
+    if( $(window).width() < 768){
+        $('.fleet-main').hide();
+        $('.vehicles__gallery').show();
+        $('.vehicles__gallery').not('.slick-initialized').slick({
+            dots: false,
+            infinite: true,
+            draggable: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            prevArrow: '<button class="vehicles__gallery__navigation vehicles__gallery__navigation--prev" title="Last Entries"><i class="fa fa-angle-left"></i></button>',
+            nextArrow: '<button class="vehicles__gallery__navigation vehicles__gallery__navigation--next" title="Next Entries"><i class="fa fa-angle-right"></i></button>'
+        });
+    }else{
+        $('.vehicles__gallery').hide();
+        $('.fleet-main').show();
+    }
 };

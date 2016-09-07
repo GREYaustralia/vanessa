@@ -25,8 +25,11 @@
     @include if-laptop-and-smaller{
       width:50vw;
     }
-    @include if-tablet-and-smaller {
-      display: none;
+    // @include if-tablet-and-smaller {
+    //   display: none;
+    // }
+    @include if-large-desktop {
+      width:60vw;
     }
   }
 
@@ -43,28 +46,11 @@
     justify-content: center;
     -webkit-justify-content: center;
     position: absolute;
-    bottom:0;
+    bottom:10vh;
 
     @include if-ie {
       transform: translateX(-20%);
     }
-
-    @include if-tablet-and-smaller {
-      display: none;
-    }
-    // @include if-large-desktop{
-    //   transform: scale(2);
-    //   bottom:20vh
-    // }
-    @include media-context(('4k': 3839px)){
-      .vehicles {
-        @include media('<=4k') {
-          transform:scale(3);
-          bottom: 30vh;
-        }
-      }
-    }
-
 
     .van, .bus, .car {
       cursor: pointer;
@@ -116,15 +102,48 @@
     }
   }
 
+    @include media-context(('1600': 1600px)){
+    .vehicles {
+      @include media('>=1600') {
+        transform:scale(1);
+        bottom: 12vh;
+      }
+    }
+  }
+  @include media-context(('1920': 1920px)){
+    .vehicles {
+      @include media('>=1920') {
+        transform:scale(1.5);
+        bottom: 20vh;
+      }
+    }
+  }
+  @include media-context(('4k': 3840px)){
+    .vehicles {
+      @include media('>=4k') {
+        transform:scale(3);
+        bottom: 30vh;
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
   .vehicles__gallery {
-    display: none;
+    // display: none;
 
     @include if-tablet-and-smaller {
       @include full-height(1);
-      display: flex;
-      display: -webkit-flex;
-      align-items: center;
-      -webkit-align-items: center;
+      // display: flex;
+      // display: -webkit-flex;
+      // align-items: center;
+      // -webkit-align-items: center;
     }
 
     h2 {
