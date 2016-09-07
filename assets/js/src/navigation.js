@@ -15,11 +15,10 @@ $(document).ready(function () {
             $('ul.menu').removeClass('open');
         }
     })
-    $('ol.sr-hidden').find('a[href="#nav"]').on('click', function(){
+    $('.sr-hidden').find('a[href="#nav"]').on('click', function(){
         $('.hamburger').focus();
     })
 
-    $('ol.sr-hidden')
 
 
 
