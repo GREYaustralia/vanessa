@@ -56,7 +56,7 @@ function calculateNavButtons(sections) {
 
             navButtonUp.attr('href', '#' + prevId);
             navButtonDown.attr('href', '#' + nextId);
-        }else if(topOfPage()){
+        }else if(topOfPage() || $('.nav-btn--up').attr('href') == '#undefined'){
             $('.nav-btn--up').attr('href', '#hero')
         }
     });
