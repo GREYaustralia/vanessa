@@ -398,6 +398,9 @@ p {
   z-index: 1;
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
   cursor: pointer;
+  &:focus, &:active {
+    outline:0;
+  }
 
   @include if-tablet-and-smaller {
     display: none !important;

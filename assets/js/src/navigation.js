@@ -18,9 +18,9 @@ $(document).ready(function () {
     $('ol.sr-hidden').find('a[href="#nav"]').on('click', function(){
         $('.hamburger').focus();
     })
-    $('ol.sr-hidden').find('a[href="#about"]').on('click', function(){
-        $('#about').focus();
-    })
+
+    $('ol.sr-hidden')
+
 
 
     // $('.search input').on('focus', function(){
