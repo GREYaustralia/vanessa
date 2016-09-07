@@ -67,6 +67,14 @@
       }
       .blog__body{
         height:100%;
+        a {
+          &:hover, &:focus {
+            img {
+              opacity: 0.8;
+
+            }
+          }
+        }
         img {
           width: 100%;
           object-fit: cover;

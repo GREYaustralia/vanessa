@@ -40,7 +40,6 @@
     .gallery__slide {
       height:100%;
       @include if-landscape {
-        // width: 50vh;
         width:25%;
       }
         @include if-large-desktop{
@@ -61,6 +60,14 @@
       border: 0.15em solid $text-dark;
       margin: 0 2em;
       overflow: hidden;
+      a {
+        &:hover, &:focus {
+          img {
+            opacity: 0.8;
+
+          }
+        }
+      }
       img {
         height: 33vh;
         width: 100%;

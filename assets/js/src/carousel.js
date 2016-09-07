@@ -24,8 +24,6 @@
     $('.flex-prev').attr('tabindex','-1')
     $('.flex-next').attr('tabindex','-1')
 
-
-    // var mediaPlayer = $('#crowd');
     $('.element__toggle').on('click', function(){
         if (video.paused === false) {
             video.pause();

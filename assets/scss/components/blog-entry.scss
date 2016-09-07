@@ -110,6 +110,15 @@
         text-shadow:none;
         text-align: center;
       }
+
+
+      a {
+        &:hover, &:focus {
+          img {
+            opacity: 0.8;
+          }
+        }
+      }
       img {
         display: block;
         width: 100%;
@@ -121,6 +130,12 @@
         text-transform: uppercase;
         color: #767676;
         text-decoration: underline;
+        &:hover, &:focus {
+          color:$text-orange;
+        }
+        @include if-large-desktop {
+          font-size: 1em
+        }
       }
     }
   }

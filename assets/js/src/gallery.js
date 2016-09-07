@@ -33,16 +33,6 @@ $(document).ready(function () {
         ]
     });
 
-    // Vehicles gallery
-        // $('.vehicles__gallery').slick({
-        //     centerMode: false,
-        //     infinite: true,
-        //     slidesToShow: 1,
-        //     slidesToScroll: 1,
-        //     prevArrow: '<button class="vehicles__gallery__navigation vehicles__gallery__navigation--prev" title="Last Vehicle"><i class="fa fa-angle-left"></i></button>',
-        //     nextArrow: '<button class="vehicles__gallery__navigation vehicles__gallery__navigation--next" title="Next Vehicle"><i class="fa fa-angle-right"></i></button>',
-        // });
-
 
   function carosel(){
     if ($(window).width() < 800 ) {

@@ -29,13 +29,4 @@ $(document).ready(function () {
         $('footer').focus();
     })
 
-
-
-
-
-    // $('.search input').on('focus', function(){
-    //   $('.social-media-icons').hide()
-    // }).on('focusout', function(){
-    //   $('.social-media-icons').show()
-    // })
 });
