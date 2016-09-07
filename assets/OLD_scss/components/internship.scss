@@ -1,0 +1,58 @@
+@import 'modules';
+
+.internship {
+  background: url($img-base-path + 'internship.jpg') bottom center;
+  background-size: cover;
+  padding: $navbar-height $navbar-height * 2;
+  display: flex;
+
+
+  @include if-tablet-and-smaller {
+    @include background-opacity('internship.jpg', 0.5);
+
+    .text-red{
+      color:white;
+    }
+
+  }
+
+  @include if-tablet {
+    padding: 2em;
+
+  }
+
+  h3 {
+    font-size: 2.5em;
+    margin-bottom: 0.3em;
+    font-family: "Bushcraft Textured";
+  }
+
+  @include if-mobile {
+    background-position: top;
+    background-size: cover;
+  }
+
+  .text-box {
+    width: 30vw;
+    text-align: left;
+    align-self: flex-start;
+
+    @include if-tablet-and-smaller {
+      width: 100%;
+      text-align: center;
+      align-self: center;
+    }
+  }
+
+  p {
+    margin: 0 0 1em;
+  }
+
+  .button {
+    background: #ff4a00;
+    font-family: "Bushcraft Textured";
+    padding: 0.4em 0.6em 0.2em;
+    font-size: 1.5em;
+    color: #fff;
+  }
+}

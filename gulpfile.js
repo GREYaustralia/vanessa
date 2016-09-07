@@ -27,7 +27,7 @@ gulp.task('css', function () {
         .on('error', notify.onError({
             message: '<%= error.message %>'
         }))
-        .pipe(autoprefixer('last 2 versions'))
+        .pipe(autoprefixer('> 1% in AU'))
         .pipe(minifyCss())
         .pipe(gulp.dest(dist.css))
         .pipe(notify({

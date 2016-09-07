@@ -1,0 +1,275 @@
+@import 'modules';
+
+.fleet {
+  background: url($img-base-path + "fleet.jpg") center bottom;
+  background-size: cover;
+  display: flex;
+
+  position: relative;
+  overflow: hidden;
+
+
+  @include if-tablet-and-smaller{
+    @include background-opacity('fleet.jpg', 0.5);
+    background-position: center bottom;
+  }
+
+  .text-box {
+    position: absolute;
+    left: 0;
+    margin: 1em 5em;
+    text-align: left;
+    width:40vw;
+    z-index: 1;
+
+    @include if-laptop-and-smaller{
+      width:50vw;
+    }
+    @include if-tablet-and-smaller {
+      display: none;
+    }
+  }
+
+  @include if-tablet-and-smaller {
+    display: block;
+  }
+
+  .vehicles {
+
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    bottom:0;
+
+    @include if-ie {
+      transform: translateX(-20%);
+    }
+
+    @include if-tablet-and-smaller {
+      display: none;
+    }
+    @include if-large-desktop{
+      transform: scale(2);
+      bottom:22vh
+    }
+
+
+    .van, .bus, .car {
+      cursor: pointer;
+    }
+
+    .van {
+      transform: scale(0.7);
+      height: 237px;
+      min-width: 435px;
+      background: url($img-base-path + "/fleet/van-all.png") no-repeat 0 0;
+      position: relative;
+      top: 20px;
+      left: 360px;
+      z-index: 1;
+      animation: van-out 0.2s forwards;
+
+      &:hover, &.hover {
+        animation: van-in 0.2s forwards;
+      }
+    }
+
+    .car {
+      transform: scale(0.7);
+      height: 252px;
+      min-width: 618px;
+      background: url($img-base-path + "/fleet/car-all.png") no-repeat 0 0;
+      position: relative;
+      top: 20px;
+      right: 360px;
+      animation: car-out 0.2s forwards;
+
+      &:hover, &.hover {
+        animation: car-in 0.2s forwards;
+      }
+    }
+
+    .bus {
+      transform: scale(0.7);
+      height: 534px;
+      min-width: 768px;
+      position: relative;
+      left: 60px;
+      background: url($img-base-path + "/fleet/bus-all.png") no-repeat 0 0;
+      animation: bus-out 0.3s forwards;
+
+      &:hover, &.hover {
+        animation: bus-in 0.3s forwards;
+      }
+    }
+  }
+
+  .vehicles__gallery {
+    display: none;
+
+    @include if-tablet-and-smaller {
+      @include full-height(1);
+      display: flex;
+      align-items: center;
+    }
+
+    h2 {
+      font-size: 2em;
+      font-family: "Bushcraft Textured";
+      color: white;
+    }
+
+    p {
+      font-size: 1.6em;
+    }
+
+    ul {
+      list-style-type: none;
+      color: white;
+      margin-bottom: 1em;
+      font-size: 1.3em;
+      font-family: "Bushcraft Textured";
+    }
+
+    img {
+      max-width: 80%;
+      margin: 0 auto 4em;
+
+      @include if-landscape {
+        margin: 0;
+      }
+
+      @include if-tablet {
+        max-width: 50%;
+      }
+    }
+
+    small {
+      display: block;
+      margin-bottom: 2em;
+    }
+
+    .slick-list, .slick-track {
+      height: 100%;
+    }
+
+    .vehicles__gallery__body {
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      outline: none;
+
+      @include if-landscape {
+        flex-direction: row;
+      }
+
+      .specifications {
+        padding: 4em 2em;
+        align-self: center;
+
+        @include if-landscape {
+          width: 50vw;
+
+          h2 {
+            font-size: 2em;
+          }
+
+          p {
+            font-size: 1.4em;
+          }
+
+          ul {
+            font-size: 1.2em;
+          }
+        }
+      }
+
+      &.vehicles__gallery__body--van {
+        img {
+          max-width: 60%;
+
+          @include if-tablet {
+            max-width: 35%;
+          }
+
+          @include if-landscape {
+            position: relative;
+            top: 3em;
+            right: 1em;
+          }
+        }
+      }
+
+      &.vehicles__gallery__body--car {
+        img {
+          @include if-landscape {
+            position: relative;
+            top: 3em;
+            right: 2em;
+          }
+        }
+      }
+
+      &.vehicles__gallery__body--bus {
+        img {
+          @include if-landscape {
+            position: relative;
+            right: 3em;
+          }
+        }
+      }
+
+      @include if-landscape {
+        img {
+          width: 90%;
+          align-self: center;
+        }
+      }
+    }
+
+    .vehicles__gallery__navigation {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: white;
+      font-size: 3em;
+      z-index: 1;
+
+      &.vehicles__gallery__navigation--prev {
+        left: 0.2em;
+      }
+
+      &.vehicles__gallery__navigation--next {
+        right: 0.2em;
+      }
+    }
+  }
+}
+
+#van {
+  @extend %info-section;
+  @include full-height-with-footer;
+
+  .background {
+    @include background('fleet/van.jpg');
+  }
+}
+
+#bus {
+  @extend %info-section;
+
+  .background {
+    @include background('fleet/bus.jpg');
+  }
+}
+
+#car {
+  @extend %info-section;
+
+  .background {
+    @include background('fleet/car.jpg');
+  }
+}

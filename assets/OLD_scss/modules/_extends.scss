@@ -1,0 +1,81 @@
+@import "mixins";
+
+%info-section {
+  display: flex;
+  background: black;
+
+  h2 {
+    font-family: "Bushcraft Textured";
+    font-size: 2em;
+    color: white;
+  }
+
+  p {
+    font-family: $font-family;
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+
+  @include if-tablet-and-smaller {
+    flex-direction: column;
+  }
+
+  @include if-landscape {
+    flex-direction: row;
+  }
+
+  .background {
+    width: 50vw;
+
+    @include if-tablet-and-smaller {
+      @include full-height(2);
+      width: 100vw;
+      order: 1;
+    }
+
+    @include if-landscape {
+      @include full-height(1);
+      order: 0;
+    }
+  }
+
+  .text-box {
+    width: 50vw;
+    padding: 4em;
+    align-self: center;
+
+    a {
+      margin: 0 auto;
+      width: auto;
+    }
+
+    .btn {
+      position: relative;
+      top: 0.5em;
+    }
+
+    @include if-tablet-and-smaller {
+      @include full-height(2);
+      width: 100vw;
+      padding: 2em;
+      order: 2;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    @include if-landscape {
+      height: 100%;
+      order: 0;
+      padding: 1em;
+    }
+
+    @include if-mobile {
+      padding: 1.5em;
+      height:auto;
+      p {
+        font-size: 0.8em;
+      }
+    }
+  }
+}

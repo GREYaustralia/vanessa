@@ -1,0 +1,21 @@
+@import 'modules';
+
+.error-page {
+  @include full-height-with-footer;
+  background-color: #1d1d1d;
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+  .error-code {
+    font-family: "Bushcraft Textured";
+    font-size: 8em;
+    display: inline-block;
+
+
+  }
+  .error-status {
+    font-family: "Bushcraft Textured";
+    font-size: 2em;
+  }
+
+}
