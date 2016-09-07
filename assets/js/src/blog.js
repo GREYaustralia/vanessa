@@ -1,9 +1,4 @@
 $(document).ready(function () {
-
-    size = 350
-
-    height = $(window).height();
-    width = $(window).width();
     // Blog post gallery
     $('.blog__gallery').slick({
         infinite: true,
@@ -54,12 +49,9 @@ $(document).ready(function () {
             }
         ]
     });
-
-    // $(window).on('resize', function(){
-    //     var resizeHeight = $(window).height();
-    //     var heightDivide = resizeHeight - height
-    //     var heightChange = heightDivide
-    //     // console.log(heightChange / 20)
-    //     $('.blog__hero ').find('img').css('height', 'calc(350px + '+heightChange+'px)' )
-    // });
-});
+    blogPageImage();
+    $(window).on('resize', function(){
+        console.log('running')
+        blogPageImage();
+    });
+})
