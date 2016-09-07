@@ -6,6 +6,8 @@ var notify = require("gulp-notify");
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var order = require("gulp-order")
+var postcss = require('gulp-postcss');
+var sourcemaps = require('gulp-sourcemaps');
 
 var assets = 'assets';
 
@@ -27,7 +29,10 @@ gulp.task('css', function () {
         .on('error', notify.onError({
             message: '<%= error.message %>'
         }))
-        .pipe(autoprefixer('> 1% in AU'))
+        .pipe(autoprefixer({
+            browsers: ['> 1% in AU', 'last 2 versions', 'ios 8-9'],
+            cascade: false
+        }))
         .pipe(minifyCss())
         .pipe(gulp.dest(dist.css))
         .pipe(notify({
@@ -35,7 +40,6 @@ gulp.task('css', function () {
             message: '<%= file.relative %> was updated',
         }));
 });
-
 gulp.task('js', function () {
     return gulp.src(src.js + '/*.js')
         .on('error', notify.onError({

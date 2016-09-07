@@ -63,9 +63,21 @@ function calculateNavButtons(sections) {
 }
 
 function blogPageImage(){
-    console.log('ok')
         var section = $('section').height() + 'px';
         var heroText = $('.hero__text').height() + 'px';
         var element = $('.blog__list').height() + 'px';
         $('.blog__hero img').css('height', 'calc(' + section + ' - ' + heroText + ' - ' + element + ')')
 }
+
+function carosel(){
+    $('.vehicles__gallery').not('.slick-initialized').slick({
+        dots: false,
+        infinite: true,
+        draggable: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<button class="vehicles__gallery__navigation vehicles__gallery__navigation--prev" title="Last Entries"><i class="fa fa-angle-left"></i></button>',
+        nextArrow: '<button class="vehicles__gallery__navigation vehicles__gallery__navigation--next" title="Next Entries"><i class="fa fa-angle-right"></i></button>'
+    });
+};
