@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="assets/css/app.css">
 </head>
 <body>
-  <ol class='sr-hidden'>
-    <li><a href='#nav'>Skip to Navigation</a></li>
-    <li><a href='#content'>Skip to Content</a></li>
-    <li><a href='#footer'>Skip to Footer</a></li>
-  </ol>
+  <div class='sr-hidden'>
+    <a href='#' class="skip_nav">Skip to Navigation</a>
+    <a href='#' class="skip_content">Skip to Content</a>
+    <a href='#' class="skip_footer">Skip to Footer</a>
+  </div>
 <nav>
     <a href="#hero" class="brand"><img src="assets/img/logo.png" alt="Vanessa Logo"></a>
     <div class="social-media-icons">
@@ -32,7 +32,6 @@
         </form>
     </div>
     <button class="hamburger" title="navigation" tabindex="0">
-
         <span></span>
         <span></span>
         <span></span>
@@ -62,8 +61,7 @@
         </ul>
     </div>
 
-    <section id="hero" class="hero active">
-        <a name="content"></a>
+    <section id="hero" class="hero active" tabindex="0">
         <div class="carousel">
             <ul class="carousel__slides">
                 <li tabindex="0">
@@ -89,6 +87,7 @@
     </section>
 
     <section id="about" class="about" tabindex="0" >
+        <a name="content"></a>
         <div class="text-box">
             <p>Welcome to the zero generation.
                 Grew up in the zeros. Drink zeros. Have zero dollars.
@@ -366,7 +365,7 @@
         <a href="blog-page.html" class="btn btn--orange">See More Posts</a>
     </section>
 
-    <footer >
+    <footer tabindex="0">
         <a href="index.html" name='footer' class="brand">
             <img src="assets/img/logo.png" alt="Vanessa">
         </a>
@@ -402,8 +401,9 @@
         <button class="btn btn--orange btn--close-modal">Close</button>
     </div>
 </div>
-
-
+<!-- #####OFFLINE TESTING#####-->
+<script type="text/javascript" src="assets/js/components/jquery.min.js"></script>
+<!-- ######### -->
 <script type="text/javascript" src="assets/js/components.js"></script>
 <script type="text/javascript" src="assets/js/lib/jquery-validation.min.js"></script>
 <script type="text/javascript" src="assets/js/app.js"></script>

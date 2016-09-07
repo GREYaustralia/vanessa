@@ -1,4 +1,4 @@
-    $(document).ready(function () {
+$(document).ready(function () {
     var video = document.getElementById('crowd');
 
     $('.carousel').flexslider({
@@ -24,8 +24,6 @@
     $('.flex-prev').attr('tabindex','-1')
     $('.flex-next').attr('tabindex','-1')
 
-
-    // var mediaPlayer = $('#crowd');
     $('.element__toggle').on('click', function(){
         if (video.paused === false) {
             video.pause();

@@ -50,7 +50,6 @@ $(document).ready(function () {
     });
     blogPageImage();
     $(window).on('resize', function(){
-        console.log('running')
         blogPageImage();
     });
 })

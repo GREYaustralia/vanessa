@@ -11,12 +11,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/app.css">
 </head>
-<body>
-<ol class='sr-hidden'>
-    <li><a href='#nav'>Skip to Navigation</a></li>
-    <li><a href='#content'>Skip to Content</a></li>
-    <li><a href='#footer'>Skip to Footer</a></li>
-</ol>
+  <div class='sr-hidden'>
+    <a href='#' class="skip_nav">Skip to Navigation</a>
+    <a href='#' class="skip_content">Skip to Content</a>
+    <a href='#' class="skip_footer">Skip to Footer</a>
+  </div>
 <nav>
     <a href="index.html" class="back-button js-back-history"><i class="fa fa-angle-left"></i></a>
     <a href="index.html" class="brand"><img src="assets/img/logo.png" alt="Vanessa"></a>
@@ -60,7 +59,7 @@
             </select>
             <input type="text" title="First Name" name="name" placeholder="First Name" aria-label="First Name" required>
             <input type="text" title="Last Name" name="surname" placeholder="Surname" aria-label="Last Name" required>
-            <input type="text" title="Phone Number" name="phone_number" placeholder="Phone Number" aria-label="Phone Number" required>
+            <input type="text" title="Phone Number" name="phone_number" placeholder="Phone Number (03) 1234 5678" aria-label="Phone Number" required>
             <input type="text" title="Email" name="email" placeholder="Email" aria-label="Email" required>
             <textarea name="message" placeholder="What can we help you with?" data-placeholder-enquiry="What can we help you with?" data-placeholder-internships="What can you bring to the Vanessa team?" data-placeholder-fleet="Tell us more about your event?" title="Message" aria-label="Message" required></textarea>
             <button type="submit">Submit</button>
@@ -83,7 +82,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer tabindex="0">
         <a href="index.html" name="footer" class="brand">
             <img src="assets/img/logo.png" alt="Vanessa">
         </a>

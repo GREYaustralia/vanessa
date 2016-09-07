@@ -52,9 +52,17 @@
     @include if-tablet-and-smaller {
       display: none;
     }
-    @include if-large-desktop{
-      transform: scale(2);
-      bottom:22vh
+    // @include if-large-desktop{
+    //   transform: scale(2);
+    //   bottom:20vh
+    // }
+    @include media-context(('4k': 3839px)){
+      .vehicles {
+        @include media('<=4k') {
+          transform:scale(3);
+          bottom: 30vh;
+        }
+      }
     }
 
 

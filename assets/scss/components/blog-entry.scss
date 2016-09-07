@@ -22,17 +22,41 @@
       color: $text-dark;
       padding: 1em 1em 0 1em;
       font-size: 3em;
-      cursor: pointer;
+      // cursor: pointer;
     }
     h2 {
       font-family: "Bushcraft Textured";
-      line-height: 1em;
+      line-height: 1.2em;
       color: $text-dark;
       padding: 1em 1em 0 1em;
       font-size: 2em;
-      cursor: pointer;
+      // cursor: pointer;
     }
     h3 {
+      font-family: "Bushcraft Textured";
+      line-height: 1.2em;
+      color: $text-dark;
+      padding: 1em 1em 0 1em;
+      font-size: 1em;
+      // cursor: pointer;
+    }
+    h4 {
+      font-size: 1.2em;
+      padding: 0.5em 1em 0 1em;
+      font-family: 'Helvetica';
+      text-transform: uppercase;
+      font-weight: normal;
+      text-shadow:none;
+    }
+    h5 {
+      font-size: 1em;
+      padding: 0.5em 1em 0 1em;
+      font-family: 'Helvetica';
+      text-transform: uppercase;
+      font-weight: normal;
+      text-shadow:none;
+    }
+    h6 {
       font-size: 0.9em;
       padding: 0.5em 1em 0 1em;
       font-family: 'Helvetica';
@@ -50,6 +74,20 @@
         text-shadow:none;
         padding: 0 1.2em;
         text-align: center;
+    }
+    ul, ol{
+      margin-left:6em;
+      text-align: left
+    }
+    li {
+        font-size: 1em;
+        font-family: 'Helvetica';
+        font-weight: lighter;
+        color: $text-dark;
+        padding: 0 1.2em;
+        text-shadow:none;
+        padding: 0 1.2em;
+        // text-align: center;
     }
 
     table, th, td {
@@ -72,6 +110,7 @@
 
 
 .blog__section{
+  position: relative;
   margin-top:2em;
   width:60vw;
   overflow: hidden;
@@ -110,6 +149,15 @@
         text-shadow:none;
         text-align: center;
       }
+
+
+      a {
+        &:hover, &:focus {
+          img {
+            opacity: 0.8;
+          }
+        }
+      }
       img {
         display: block;
         width: 100%;
@@ -121,27 +169,49 @@
         text-transform: uppercase;
         color: #767676;
         text-decoration: underline;
+        &:hover, &:focus {
+          color:$text-orange;
+        }
+        @include if-large-desktop {
+          font-size: 1em
+        }
       }
     }
   }
-}
+
   .blog__navigation {
     position: absolute;
     color: $text-dark;
-    top: 80%;
+    top: 50%;
     transform: translateY(-50%);
     font-size: 5em;
+    height:100%;
+    width:1em;
     z-index: 1;
     &.blog__navigation--prev {
-      left: -1em;
-      @include if-mobile {
-        left:-0.4em;
-      }
+      // left: -1em;
+      left:0;
+      text-align: left;
+      background:linear-gradient(to right, white , transparent);
+      // @include if-mobile {
+      //   left:-0.4em;
+      // }
     }
     &.blog__navigation--next {
-      right: -1em;
-      @include if-mobile {
-        right:-0.4em;
+      // right: -1em;
+      background:linear-gradient(to left, white , transparent);
+      right:0;
+      text-align: right;
+      // @include if-mobile {
+      //   right:-0.4em;
+      // }
       }
-  }
+      &:hover{
+        color: $text-orange;
+
+      }
+      &:focus {
+        outline:0;
+      }
+    }
 }

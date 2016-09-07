@@ -15,17 +15,18 @@ $(document).ready(function () {
             $('ul.menu').removeClass('open');
         }
     })
-    $('ol.sr-hidden').find('a[href="#nav"]').on('click', function(){
+    var sections = $('section').map(function () {
+        return '#' + this.id;
+    });
+    $('.skip_nav').on('click', function(){
         $('.hamburger').focus();
     })
+    $('.skip_content').on('click', function(){
+        content = sections[0]
+        $(content).focus();
+    })
+    $('.skip_footer').on('click', function(){
+        $('footer').focus();
+    })
 
-    $('ol.sr-hidden')
-
-
-
-    // $('.search input').on('focus', function(){
-    //   $('.social-media-icons').hide()
-    // }).on('focusout', function(){
-    //   $('.social-media-icons').show()
-    // })
 });
