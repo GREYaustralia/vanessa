@@ -11,12 +11,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/app.css">
 </head>
-<body>
-<ol class='sr-hidden'>
-    <li><a href='#nav'>Skip to Navigation</a></li>
-    <li><a href='#content'>Skip to Content</a></li>
-    <li><a href='#footer'>Skip to Footer</a></li>
-</ol>
+  <div class='sr-hidden'>
+    <a href='#' class="skip_nav">Skip to Navigation</a>
+    <a href='#' class="skip_content">Skip to Content</a>
+    <a href='#' class="skip_footer">Skip to Footer</a>
+  </div>
 <nav>
     <a href="index.html" class="back-button js-back-history"><i class="fa fa-angle-left"></i></a>
     <a href="index.html" class="brand"><img src="assets/img/logo.png" alt="Vanessa"></a>
@@ -83,7 +82,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer tabindex="0">
         <a href="index.html" name="footer" class="brand">
             <img src="assets/img/logo.png" alt="Vanessa">
         </a>
