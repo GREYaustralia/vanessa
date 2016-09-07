@@ -1,9 +1,4 @@
 $(document).ready(function () {
-
-    size = 350
-
-    height = $(window).height();
-    width = $(window).width();
     // Blog post gallery
     $('.blog__gallery').slick({
         infinite: true,
@@ -34,7 +29,6 @@ $(document).ready(function () {
         infinite: true,
         slidesToShow: 2,
         slidesToScroll: 2,
-        // centerMode: true,
         prevArrow: '<button class="blog__navigation blog__navigation--prev" title="Last Entries"><i class="fa fa-angle-left"></i></button>',
         nextArrow: '<button class="blog__navigation blog__navigation--next" title="Next Entries"><i class="fa fa-angle-right"></i></button>',
         responsive: [
@@ -54,12 +48,9 @@ $(document).ready(function () {
             }
         ]
     });
-
-    // $(window).on('resize', function(){
-    //     var resizeHeight = $(window).height();
-    //     var heightDivide = resizeHeight - height
-    //     var heightChange = heightDivide
-    //     // console.log(heightChange / 20)
-    //     $('.blog__hero ').find('img').css('height', 'calc(350px + '+heightChange+'px)' )
-    // });
-});
+    blogPageImage();
+    $(window).on('resize', function(){
+        console.log('running')
+        blogPageImage();
+    });
+})

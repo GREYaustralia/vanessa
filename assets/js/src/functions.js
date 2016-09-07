@@ -61,3 +61,11 @@ function calculateNavButtons(sections) {
         }
     });
 }
+
+function blogPageImage(){
+    console.log('ok')
+        var section = $('section').height() + 'px';
+        var heroText = $('.hero__text').height() + 'px';
+        var element = $('.blog__list').height() + 'px';
+        $('.blog__hero img').css('height', 'calc(' + section + ' - ' + heroText + ' - ' + element + ')')
+}

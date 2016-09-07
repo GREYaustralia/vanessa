@@ -1,17 +1,21 @@
 @import 'modules';
-
+.one_page{
+  overflow:hidden;
+}
 .blog-page{
   @include full-height-with-footer;
 
   .blog__hero{
+    position: relative;
     img{
-      height: 60vh;
+      // height: 60vh;
       width: 100%;
-      left: 0;
+      // left: 0;
       object-fit: cover;
     }
   }
   .hero__text{
+    position: relative;
     width:100%;
     .text{
       padding: 1em 0;
@@ -42,9 +46,7 @@
     }
   }
   .blog__list{
-    bottom:3em;
-    position: fixed;
-        // min-height: 275px;
+    position: relative;
     background-color: white;
     width:100%;
 
@@ -122,8 +124,7 @@
   .blog__navigation {
     position: absolute;
     color: $text-light;
-    top: 5em;
-    // bottom: 3em;
+    top: 50%;
     transform: translateY(-50%);
     font-size: 3em;
     z-index: 1;
