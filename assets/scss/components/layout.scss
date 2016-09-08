@@ -5,9 +5,13 @@ html, body, main {
 }
 
 main {
+  overflow: scroll;
   overflow-y: scroll;
   overflow-x: hidden;
   @include if-mobile{
+    -webkit-overflow-scrolling: touch;
+  }
+  @include if-landscape {
     -webkit-overflow-scrolling: touch;
   }
 }

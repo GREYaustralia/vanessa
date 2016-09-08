@@ -25,9 +25,6 @@
     @include if-laptop-and-smaller{
       width:50vw;
     }
-    // @include if-tablet-and-smaller {
-    //   display: none;
-    // }
     @include if-large-desktop {
       width:60vw;
     }
@@ -98,6 +95,15 @@
 
       &:hover, &.hover {
         animation: bus-in 0.3s forwards;
+      }
+    }
+  }
+
+      @include media-context(('1440': 1440px)){
+    .vehicles {
+      @include media('>=1440') {
+        transform:scale(1);
+        bottom: 10vh;
       }
     }
   }
